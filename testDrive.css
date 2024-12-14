@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+ }
+
+.nav-container {
+    background: rgba(45, 44, 44, 0.308);;
+    box-shadow: -20px 90px -10px 90px rgba(19, 19, 19, 1);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  .logo {
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+
+  .logo-container a {
+    text-decoration: none;
+  }
+  
+  .nav-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-container ul li {
+    margin-right: 10px;
+    list-style: none;
+  }
+  .nav-container ul li a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    padding: 0px 10px;
+    position: relative;
+  }
+  .nav-container ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    bottom: -12px;
+    left: 30%;
+    transition: 0.5s;
+  }
+  .nav-container ul li a:hover::before {
+    width: 50%;
+  }
+.imgCon{
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(rgba(10, 10, 10, 0.758), rgba(28, 27, 27, 0.462)),
+      url("images/Honda_test_Drive.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+}
+.imgCon h3{
+    color: white;
+    z-index: 1;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.imgCon span{
+    width: 70px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.body-content{
+    padding: 30px 90px;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+.body-content h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: black;
+}
+.body-content h4 {
+    font-size: 18px;
+}
+
+
+.shop-container {
+  padding: 0px 70px;
+}
+
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1.5rem;
+  flex: none;
+}
+.product-box {
+  width: 430px;
+  position: relative;
+}
+
+.product-box img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.product-title {
+  color: rgb(184, 184, 184);
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-box:hover > .box-content > .product-title{
+  color: red;
+}
+
+.product-box .checkBox[type="checkbox"] {
+  accent-color: red;
+  margin-left: 20px;
+  margin-top: -10px;
+  width: 20px;
+  height: 30px;
+  display: none;
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection {
+  cursor: pointer;
+  width: 210px;
+  padding: 20px 0px;
+  background-color: rgb(195, 195, 195);
+  position: fixed;
+  bottom: 0%;
+  right: 10%;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.selection h3 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.footer-section {
+  padding: 60px 50px;
+  background-color: rgb(31, 32, 35);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-content {
+  color: white;
+  text-align: center;
+}
+
+.footer-content h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  cursor: pointer;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.footer-content p::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  bottom: -12px;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.footer-content p:hover::before{
+  width: 30%;
+}
+
+.footer-content i {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-content button {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(255, 54, 54);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-section .copy {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  margin-bottom: 10px;
+}

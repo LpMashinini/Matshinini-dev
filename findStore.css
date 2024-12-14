@@ -1,0 +1,145 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(10, 10, 10, 0.638), rgba(0, 0, 0, 0.54)),
+    url("images/honda-test.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+}
+.nav-container {
+  background: transparent;
+  box-shadow: 0 4px 30px rgba(106, 106, 106, 0.955);
+  backdrop-filter: blur(96px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.logo {
+  color: white;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.logo-container a {
+  text-decoration: none;
+}
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-container ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+.nav-container ul li a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 19px;
+  padding: 0px 10px;
+  position: relative;
+}
+.nav-container ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+  bottom: -12px;
+  left: 30%;
+  transition: 0.5s;
+}
+.nav-container ul li a:hover::before {
+  width: 50%;
+}
+
+.input-Container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inpuCon {
+  margin-top: 8rem;
+}
+
+.inpuCon h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.input {
+  width: 450px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 20px;
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.input input::placeholder{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.input-btn {
+    width: 450px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: rgb(210, 207, 207);
+    border: 2px solid red;
+}
+.input-btn button {
+    color: red;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.input-btn .fa-solid {
+  color: red;
+  font-size: 20px;
+}

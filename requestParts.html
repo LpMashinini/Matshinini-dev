@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="request-parts.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="index.html">
+            <h2 class="logo">Honda museum</h2>
+          </a>
+        </div>
+        <ul>
+          <li><a href="viewModel.html">view model</a></li>
+          <li><a href="testDrive.html">test drive</a></li>
+          <li><a href="fleet.html">fleet</a></li>
+          <li><a href="requestParts.html">Request Part</a></li>
+        </ul>
+      </div>
+
+      <div class="header-img">
+        <span class="line"></span>
+        <h3>Request A Part</h3>
+      </div>
+
+      <div class="personal-details">
+        <h2>Personal details</h2>
+
+        <div class="input-Conatiner">
+          <div class="inputbox" id="select">
+            <h4>Title</h4>
+            <span class="input-text">Please select your title</span>
+            <select class="title">
+              <option value="Title">Title</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Ms">Ms</option>
+              <option value="Miss">Miss</option>
+            </select>
+          </div>
+
+          <div class="inputbox">
+            <h4>First Name</h4>
+            <span>Please enter your first name</span>
+            <input type="text" placeholder="First name" />
+          </div>
+
+          <div class="inputbox">
+            <h4>Surname</h4>
+            <span>Please enter your surname</span>
+            <input type="text" placeholder="Surname" />
+          </div>
+          <div class="inputbox">
+            <h4>Email</h4>
+            <span>Please enter a your email address</span>
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="inputbox">
+            <h4>Cell Phone</h4>
+            <span>Please enter a valid 10-digit SA Number</span>
+            <input type="number" placeholder="Cell phone" />
+          </div>
+        </div>
+
+        <div class="model">
+          <div class="input-Conatiner" id="sec-section">
+            <div class="parts-section">
+              <h2>Part Details</h2>
+
+              <div class="partsConatainer">
+                <div class="inputbox" id="select">
+                  <h4>Model</h4>
+                  <span class="input-text">Please select a model</span>
+                  <select class="title">
+                    <option value="Title">Title</option>
+                    <option value="1">CBR1000RR Fireblade SP</option>
+                    <option value="2">NC750X</option>
+                    <option value="3">NC750XD</option>
+                    <option value="4">ACE 125</option>
+                    <option value="4">CRF100L AFRICA TWIN</option>
+                    <option value="4">CRF1000L-Adventure Sports</option>
+                    <option value="4">CRF250L</option>
+                    <option value="4">CRF250 Rally</option>
+                    <option value="4">XR150l</option>
+                    <option value="4">XR190</option>
+                    <option value="4">GLH 1800 ABS</option>
+                    <option value="4">Elite 125</option>
+                    <option value="4">CRF450RX</option>
+                    <option value="4">CRF450R</option>
+                    <option value="4">CRF110F</option>
+                    <option value="4">CRF125F</option>
+                  </select>
+                </div>
+
+                <div class="inputbox">
+                  <h4>Model Year</h4>
+                  <span>Please select model year</span>
+                  <input type="number" placeholder="model year" />
+                </div>
+
+                <div class="inputbox">
+                  <h4>VIN Number</h4>
+                  <span>Please enter your VIN number (17 Characters)</span>
+                  <input type="number" placeholder="Vin Number" />
+                </div>
+              </div>
+
+              <div class="partsConatainer">
+                <div class="inputbox">
+                  <h4>Additional part details</h4>
+                  <span
+                    >Please enter additional part details (max 500 words)</span
+                  >
+                  <textarea
+                    type="text"
+                    placeholder="Additional part details"
+                    maxlength="500"
+                    style="width: 800px; height: 200px"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="location">
+              <div class="inputbox">
+                <h2>Preferred Dealer</h2>
+                <span>Please select a dealer nearest to you</span>
+                <input
+                  type="text"
+                  placeholder="enter suburb, city, or province"
+                />
+              </div>
+
+              <div class="input-btn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <button>use my current location</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-4">
+            <p>Parts are subject to availability</p>
+
+            <div class="checkInput">
+              <input type="checkbox" />
+              <p>i agree to the <span>terms & conditions</span></p>
+            </div>
+            <div class="checkInput">
+              <input type="checkbox" />
+              <p>
+                I'd like to receive updates about Honda products and promotions
+              </p>
+            </div>
+
+            <div class="inputbox-btn">
+              <button>submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="footer-section">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h2>shopping tools</h2>
+            <p>find a dealer</p>
+            <p>book a test drive</p>
+            <p>view deals</p>
+            <p>financing</p>
+          </div>
+          <div class="footer-content">
+            <h2>my honda</h2>
+            <p>book a service</p>
+            <p>request a part</p>
+            <p>model recalls</p>
+            <p>book a test drive</p>
+          </div>
+          <div class="footer-content">
+            <h2>cars</h2>
+            <p>motorcycles</p>
+            <p>formula 1</p>
+            <p>marine</p>
+            <p>power products</p>
+          </div>
+          <div class="footer-content">
+            <h2>about us</h2>
+            <p>our story</p>
+            <p>news</p>
+            <p>contact us</p>
+            <p>career</p>
+          </div>
+          <div class="footer-content">
+            <h2>follow us</h2>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <button>Stay Informed</button>
+          </div>
+        </div>
+        <p class="copy">@ copyrights Honda museum 2024.all rights reserved</p>
+      </section>
+    </div>
+
+    <script src="requestParts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b0e5731180.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

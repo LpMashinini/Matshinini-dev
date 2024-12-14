@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+ }
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-container {
+  background: rgba(45, 44, 44, 0.308);
+  box-shadow: -20px 90px -10px 90px rgba(107, 107, 107, 0);
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.logo {
+  color: white;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.logo-container a {
+  text-decoration: none;
+}
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-container ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+.nav-container ul li a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 19px;
+  padding: 0px 10px;
+  position: relative;
+}
+.nav-container ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  bottom: -12px;
+  left: 30%;
+  transition: 0.5s;
+}
+.nav-container ul li a:hover::before {
+  width: 50%;
+}
+
+.header-img {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(10, 10, 10, 0.758), rgba(28, 27, 27, 0.462)),
+    url("images/parts.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header-img h3,
+.line {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.header-img h3 {
+  color: white;
+  z-index: 1;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.header-img span {
+  width: 70px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.personal-details {
+  padding: 70px 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-details h2 {
+  margin-bottom: 50px;
+  padding-top: 70px;
+  font-size: 40px;
+}
+
+.input-Conatiner {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+
+.select {
+  width: 350px;
+  padding: 20px;
+}
+
+.select #selectCon {
+  width: 100%;
+}
+
+.inputbox {
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.inputbox h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.inputbox span {
+  color: rgb(194, 187, 187);
+}
+.inputbox input {
+  width: 100%;
+  border: 2px solid rgb(194, 187, 187);
+  outline: none;
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.inputbox input::placeholder {
+  color: rgb(194, 187, 187);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.inputbox textarea {
+  text-transform: capitalize;
+}
+
+.inputbox textarea::placeholder {
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+#select {
+  display: flex;
+  flex-direction: column;
+}
+#select .title {
+  padding: 20px;
+  margin-top: 8px;
+}
+
+#sec-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.model {
+  padding: 20px 0px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.location {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.input-btn {
+  width: 350px;
+  height: 60px;
+  margin: 190px 90px -40px -400px;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid red;
+}
+
+.input-btn button {
+  color: red;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.input-btn .fa-solid {
+  color: red;
+  font-size: 15px;
+}
+
+.form-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-4 p:nth-child(1) {
+  margin-bottom: 30px;
+  margin-top: 55px;
+}
+.checkInput {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.checkInput input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  background-color: transparent;
+}
+input[type="checkbox"]:checked {
+  background-color: red;
+  border: 2px solid red;
+}
+
+.checkInput p {
+  margin-left: 5px;
+}
+.checkInput p span {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.inputbox-btn {
+  width: 120px;
+  margin: 30px 0px 0px -10px;
+}
+
+.inputbox-btn button {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(229, 12, 12);
+  border: 0;
+  outline: none;
+  padding: 15px 30px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.partsConatainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-bottom: 25px;
+}
+
+.footer-section {
+  padding: 60px 50px;
+  background-color: rgb(31, 32, 35);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-content {
+  color: white;
+  text-align: center;
+}
+
+.footer-content h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  cursor: pointer;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.footer-content p::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  bottom: -12px;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.footer-content p:hover::before {
+  width: 30%;
+}
+
+.footer-content i {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-content button {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(255, 54, 54);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.footer-section .copy {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  margin-bottom: 10px;
+}

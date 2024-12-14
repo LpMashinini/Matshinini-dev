@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22, 21, 21);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 40px;
+}
+
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-container ul li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.nav-container ul li a {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.nav-container ul li a::before {
+    content: "";
+    background-color: deeppink;
+    border-radius: 3px;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: 30%;
+    transition: 0.5s;
+}
+
+.nav-container ul li a:hover::before {
+    width: 50%;
+}
+
+.logo-conatainer h2 {
+    font-size: 1.8rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+.logo-conatainer h2 span {
+    color: deeppink;
+}
+
+
+#checkbox {
+    display: none;
+  }
+  
+  .switch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid deeppink;
+    box-shadow: 0px 0px 3px  deeppink inset;
+  }
+  .switch svg {
+    width: 1.2em;
+  }
+  .switch svg path {
+    fill: deeppink;
+  }
+  #checkbox:checked + .switch {
+    box-shadow: 0px 0px 1px deeppink inset,
+      0px 0px 2px  deeppink inset, 0px 0px 10px  deeppink inset,
+      0px 0px 40px  deeppink, 0px 0px 100px deeppink,
+      0px 0px 5px  deeppink;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: deeppink;
+  }
+  #checkbox:checked + .switch svg {
+    filter: drop-shadow(0px 0px 5px  deeppink);
+  }
+  #checkbox:checked + .switch svg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+
+
+.header-content {
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.header-text p {
+    position: absolute;
+    bottom: 10%;
+    left: 60px;
+    text-transform: capitalize;
+    font-size: 1.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #86868b;
+    font-weight: 600;
+    background: linear-gradient(0deg, #86868b 0%, #bdc2c9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.header-content h2 {
+    text-transform: capitalize;
+    font-size: 1.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e0542;
+    font-weight: 600;
+    background: linear-gradient(0deg, #86868b 0%, #bdc2c9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.header-content .name {
+    color: deeppink;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    -webkit-text-fill-color: #e7dfd6;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    color: white;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.socials button {
+    background-color: transparent;
+    border: 1px solid deeppink;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    padding: 8px 15px;
+    margin-right: 15px;
+}
+
+.socials button .fa-download {
+    color: deeppink;
+}
+
+.socials .fa-brands {
+    color: deeppink;
+    cursor: pointer;
+    border: 1px solid deeppink;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/* about section */
+
+.about-section {
+    background-color: rgb(22, 21, 21);
+    padding: 70px 60px;
+}
+
+.about-text {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left h2 {
+    color: deeppink;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 750;
+    margin-bottom: 25px;
+}
+
+.left p {
+    color: white;
+    font-size: 18px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    width: 100%;
+}
+
+.tab-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tab-container > .tabs {
+    color: white;
+    margin-right: 90px;
+    text-transform: capitalize;
+    font-size: 19px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.tab-container > p::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 30%;
+    bottom: -12px;
+    background-color: deeppink;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.tab-container > p.active-tab::before {
+    width: 50%;
+}
+
+
+.tabs-content ul li {
+    color: white;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content.active-tab-content {
+    display: block;
+}
+
+/* projects */
+
+.projects-section {
+    background-color: rgb(22, 21, 21);
+    padding: 70px 50px;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projects-container h2 {
+    color: deeppink;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+
+.projects-container button{
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid deeppink;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
+
+
+.projects1 {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects1 img {
+    width: 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.project-content {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #9c0857);
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 1;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.projects1:hover>.project-content {
+    height: 100%;
+}
+
+
+.project-content h3 {
+    font-size: 23px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.project-content a {
+    color: deeppink;
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.project-content a .fa-up-right-from-square {
+    color: deeppink;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* contact section */
+
+.contacts {
+    background-color: rgb(22, 21, 21);
+    padding: 70px 50px;
+}
+
+.form-container {
+    display: flex;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.input-container button {
+    color: white;
+    cursor: pointer;
+    border: 1px solid #86868b;
+    background-color: transparent;
+    border-radius: 10px;
+    float: left;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: capitalize;
+    width: 150px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.input-container button:hover {
+    border: 1.5px solid deeppink;
+}
+
+
+.input-col {
+    background-color: #86868b;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.input-col .fa-solid {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.5s;
+}
+
+.input-col:hover>.fa-solid {
+    color: deeppink;
+}
+
+
+
+
+.input-col input {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    text-transform: capitalize;
+    outline: none;
+    width: 100%;
+    padding: 15px 5px;
+    font-size: 15px;
+}
+
+.input-col input::placeholder {
+    color: #f0f0f1;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 8px;
+}
+
+.input-col textarea {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding: 5px 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.input-col textarea::placeholder {
+    color: #f0f0f1;
+    font-size: 19px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.left-contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-contacts h2 {
+    color: deeppink;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.left-contacts-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-contacts-details p .fa-solid {
+    color: whitesmoke;
+    margin: 15px 15px 10px 0px;
+}
+
+.left-contacts-details p {
+    color: whitesmoke;
+}
+
+.left-contacts-details>.socials-left-details {
+    display: flex;
+}
+
+.left-contacts-details>.socials-left-details .fa-brands {
+    font-size: 25px;
+    color: deeppink;
+    cursor: pointer;
+    margin: 20px 0px 15px 15px;
+}
+
+.left-contacts-details button {
+    background-color: transparent;
+    border: 1px solid deeppink;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+
+.left-contacts button .fa-download {
+    color: deeppink;
+}
+
+
+.contacts-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(82, 81, 81);
+}
+
+footer .footer {
+    text-align: center;
+}
+
+footer .footer p {
+   color: white;
+   text-transform: capitalize;
+   font-size: 18px;
+}
+
+.label {
+    background-color: transparent;
+    border: 2px solid deeppink;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    transition: all 0.4s ease;
+    border-radius: 100%;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .label .input {
+    display: none;
+  }
+  
+  .label .title {
+    font-size: 17px;
+    color: white;
+    transition: all 0.4s ease;
+    position: absolute;
+    right: 28px;
+    bottom: 14px;
+    text-align: center;
+  }
+  
+  .label .title:last-child {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .label .circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  
+  .label .circle .icon {
+    color: #fff;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+  
+  .label .circle .square {
+    aspect-ratio: 1;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+  
+  .label .circle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: deeppink;
+    width: 100%;
+    height: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .label:has(.input:checked) {
+    width: 57px;
+    animation: installed 0.4s ease 3.5s forwards;
+  }
+  
+  .label:has(.input:checked)::before {
+    animation: rotate 3s ease-in-out 0.4s forwards;
+  }
+  
+  .label .input:checked + .circle {
+    animation: pulse 1s forwards, circleDelete 0.2s ease 3.5s forwards;
+    rotate: 180deg;
+  }
+  
+  .label .input:checked + .circle::before {
+    animation: installing 3s ease-in-out forwards;
+  }
+  
+  .label .input:checked + .circle .icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .label .input:checked ~ .circle .square {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .label .input:checked ~ .title {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .label .input:checked ~ .title:last-child {
+    animation: showInstalledMessage 0.4s ease 3.5s forwards;
+  }
+  
+  @keyframes pulse {
+    0% {
+      scale: 0.95;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      scale: 1;
+      box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    }
+    100% {
+      scale: 0.95;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  
+  @keyframes installing {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(-90deg) translate(27px) rotate(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    99% {
+      transform: rotate(270deg) translate(27px) rotate(270deg);
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes installed {
+    100% {
+      width: 150px;
+      border-color: deeppink;
+    }
+  }
+  
+  @keyframes circleDelete {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes showInstalledMessage {
+    100% {
+      opacity: 1;
+      visibility: visible;
+      right: 56px;
+    }
+  }
+  

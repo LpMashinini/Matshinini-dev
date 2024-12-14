@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="nav-container">
+            <div class="logo-conatainer">
+                <h2>lebogang<span> Matshinini</span></h2>
+            </div>
+            <ul>
+                <li><a href="#about-section">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contacts">contacts</a></li>
+                <div class="toggle-container">
+                    <input id="checkbox" type="checkbox" />
+                    <label class="switch" for="checkbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider">
+                            <path
+                                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z">
+                            </path>
+                        </svg>
+                    </label>
+                </div>
+        </div>
+
+        <div class="header-content">
+            <h2>Hello I'm </h2>
+            <h2 class="name">lebogang Matshinini</h2>
+            <p> A front end UI developer, i create website with dynamic design <br>
+                to ensures content stands out effortlessly.</p>
+            <div class="socials">
+                <!-- <button>download cv <i class="fa-solid fa-download"></i></button> -->
+                <label class="label">
+                    <input type="checkbox" class="input" />
+                    <span class="circle"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="M12 19V5m0 14-4-4m4 4 4-4"></path>
+                        </svg>
+                        <div class="square"></div>
+                    </span>
+                    <p class="title">Download CV</p>
+                    <p class="title">Open</p>
+                </label>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="about-section" id="about-section">
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <div class="right">
+                    <img src="images/about-img2.jpg" alt="">
+                </div>
+
+                <div class="left-container">
+                    <div class="left">
+                        <h2>about me</h2>
+                        <p>
+                            I am an ICT graduate from the University of Sol Plaatje with a strong focus on web
+                            development. I
+                            am deeply committed to continuous learning and i value collaboration. I
+                            look forward to opportunities where I can apply my skills, solve complex problems, and make
+                            a
+                            positive impact within the technology sector.
+                        </p>
+                    </div>
+
+                    <div class="tabs-container">
+                        <div class="tab-container">
+                            <p class="tabs active-tab" onclick="openTab('Skill')">skill</p>
+                            <p class="tabs" onclick="openTab('Experience')">Experience</p>
+                            <p class="tabs" onclick="openTab('education')">education</p>
+                        </div>
+                        <div class="tabs-content active-tab-content" id="Skill">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>javascript</li>
+                                <li>Responsive design</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content" id="Experience">
+                            <ul>
+                                <li>No Experience</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content" id="education">
+                            <ul>
+                                <li>Diploma ICT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects-section" id="projects">
+
+        <div class="projects-container">
+
+            <h2>my projects</h2>
+
+            <div class="projects">
+
+                <div class="projects1">
+                    <img src="images/test19.png" alt="">
+                    <div class="project-content">
+                        <h3>Honda Bike Museum</h3>
+                        <p>
+                            This website is inspired by Honda bike website,<br>
+                            consist of test drive, service and more.
+                        </p>
+                        <a href="#">view<i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects1">
+                    <img src="images/construction1.jpg" alt="">
+                    <div class="project-content">
+                        <h3>Brick & Beam Construction</h3>
+                        <p>
+                            A construction company that focuses on building houses <br> for every unique family.
+                        </p>
+                        <a href="#">view<i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects1">
+                    <img src="images/massage1.jpg" alt="">
+                    <div class="project-content">
+                        <h3>Blissful & Balance Touch</h3>
+                        <p>
+                            A massage compnany that focuses both on relaxation <br> and well-being of it clients.
+                        </p>
+                        <a href="#">view<i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <button>see more</button>
+
+        </div>
+    </section>
+
+
+    <section class="about-section" id="contacts">
+
+        <div class="about-content">
+
+            <div class="contacts-details">
+
+                <div class="left-contacts">
+
+                    <h2>contact me</h2>
+                    <div class="left-contacts-details">
+
+                        <p><i class="fa-solid fa-paper-plane"></i>lebogangMatshinini@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0728409072</p>
+
+                        <div class="socials-left-details">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+
+                        <!-- <button>download cv <i class="fa-solid fa-download"></i></button> -->
+                        <label class="label">
+                            <input type="checkbox" class="input" />
+                            <span class="circle"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" d="M12 19V5m0 14-4-4m4 4 4-4"></path>
+                                </svg>
+                                <div class="square"></div>
+                            </span>
+                            <p class="title">Download CV</p>
+                            <p class="title">Open</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="right">
+
+                    <div class="input-container">
+
+                        <div class="input-col">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="your name">
+                        </div>
+
+                        <div class="input-col">
+                            <i onclick="changeIcon()" class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="your email">
+                        </div>
+
+                        <div class="input-col">
+                            <i class="fa-solid fa-message"></i>
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+
+                        <button>Submit</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer">
+            <p>copyright @2024</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b0e5731180.js" crossorigin="anonymous"></script>
+    <script src="personal.js"></script>
+</body>
+
+</html>
