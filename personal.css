@@ -21,6 +21,11 @@
     background-color: var(--secondaryColor);
 }
 
+#icon.active{
+  color: var(--textColor);
+  border: 2px solid var(--textColor);
+}
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -72,6 +77,18 @@
 
 .logo-conatainer h2 span {
     color:var(--primaryColor);
+}
+
+.toggleContainer {
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.toggleContainer .fa-solid{
+  color: var(--textColor);
+  font-size: 25px;
 }
 
 
@@ -566,6 +583,17 @@
     color: var(--primaryColor);
 }
 
+.socials-left-details .fa-brands {
+  color: deeppink;
+  cursor: pointer;
+  border: 1px solid deeppink;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
 
 .contacts-details {
     display: flex;
@@ -653,8 +681,8 @@ footer .footer p {
     overflow: hidden;
   }
   
-  .label .circle .icon {
-    color:var(--textColor);
+  .label .circle .iconSvg {
+    color: var(--textColor);
     width: 30px;
     position: absolute;
     top: 50%;
@@ -662,6 +690,7 @@ footer .footer p {
     transform: translate(-50%, -50%);
     transition: all 0.4s ease;
   }
+
   
   .label .circle .square {
     aspect-ratio: 1;
@@ -688,6 +717,9 @@ footer .footer p {
     transition: all 0.4s ease;
   }
   
+  .label .circle.active-circle {
+    background-color: var(--textColor);
+  }
   .label:has(.input:checked) {
     width: 57px;
     animation: installed 0.4s ease 3.5s forwards;
