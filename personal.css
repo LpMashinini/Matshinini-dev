@@ -53,7 +53,7 @@
     position: relative;
 }
 
-.nav-container ul li a::before {
+.nav-container ul li .link::before {
     content: "";
     background-color: var(--primaryColor);
     border-radius: 3px;
@@ -83,11 +83,18 @@
   background-color: var(--primaryColor);
   border-radius: 50%;
   cursor: pointer;
-  padding: 20px;
+  padding: 15px;
+}
+.toggleContainer.active{
+  background-color: var(--textColor);
 }
 
 .toggleContainer .fa-solid{
   color: var(--textColor);
+  font-size: 25px;
+}
+.toggleContainer .fa-solid.activeIcon{
+  color: black;
   font-size: 25px;
 }
 
@@ -165,7 +172,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 
@@ -179,11 +185,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .header-content .name {
-    color: vvar(--primaryColor);
+    color: var(--primaryColor);
     text-align: center;
     text-transform: capitalize;
     font-size: 2.5rem;
@@ -225,7 +230,7 @@
 .socials .fa-brands {
     color:var(--primaryColor);
     cursor: pointer;
-    border: 1px solidvar(--primaryColor);
+    border: 1px solid var(--primaryColor);
     background-color: transparent;
     border-radius: 50%;
     padding: 8px;
@@ -478,9 +483,6 @@
 .input-col:hover>.fa-solid {
     color: var(--primaryColor);
 }
-
-
-
 
 .input-col input {
     background-color: transparent;
