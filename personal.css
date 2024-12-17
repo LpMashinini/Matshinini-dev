@@ -13,6 +13,7 @@
   --primaryColor: deeppink;
   --secondaryColor:  rgb(22, 21, 21);
   --textColor: white;
+  --secondaryTextColor: black;
 }
 
 .container {
@@ -117,6 +118,7 @@
     border: 2px solid var(--primaryColor);
     box-shadow: 0px 0px 3px  var(--primaryColor) inset;
   }
+  
   .switch svg {
     width: 1.2em;
   }
@@ -128,7 +130,7 @@
       0px 0px 2px  var(--primaryColor) inset, 0px 0px 10px  var(--primaryColor) inset,
       0px 0px 40px  var(--primaryColor), 0px 0px 100px var(--primaryColor),
       0px 0px 5px  var(--primaryColor);
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid var(--textColor);
     background-color: var(--primaryColor);
   }
   #checkbox:checked + .switch svg {
@@ -289,7 +291,7 @@
 }
 
 .tab-container > .tabs {
-    color:var(--textColor);
+    color: var(--textColor);
     margin-right: 90px;
     text-transform: capitalize;
     font-size: 19px;
@@ -315,6 +317,24 @@
 }
 
 
+.tab-container > p.active-light::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 30%;
+    bottom: -12px;
+    background-color: var(--textColor);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.tab-container > p.active-light::before {
+    width: 50%;
+}
+
+
+
 .tabs-content ul li {
     color:var(--textColor);
     margin-bottom: 10px;
@@ -329,6 +349,13 @@
     display: block;
 }
 
+.headerSection{
+  color: var(--primaryColor);
+}
+
+.headerSection.active {
+  color: var(--textColor);
+}
 /* projects */
 
 .projects-section {
@@ -350,19 +377,10 @@
 }
 
 
-.projects-container button{
-    color:var(--textColor);
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid var(--primaryColor);
-    border-radius: 10px;
-    outline: none;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 10px 20px;
+.projects-container .btns{
+  margin-top: 20px;
+  margin-bottom: 30px;
+
 }
 
 
@@ -403,6 +421,12 @@
     height: 100%;
 }
 
+.projects1.active-project:hover > .project-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.714), #151c9f);
+}
+
+
+
 
 .project-content h3 {
     font-size: 23px;
@@ -411,19 +435,25 @@
 }
 
 .project-content a {
-    color:var(--primaryColor);
+    color: var(--primaryColor);
     font-size: 18px;
     margin-top: 20px;
     text-transform: capitalize;
 }
 
 .project-content a .fa-up-right-from-square {
-    color:var(--primaryColor);
+    color: var(--primaryColor);
     font-size: 18px;
     margin-top: 20px;
     margin-left: 5px;
 }
+.project-content a .fa-up-right-from-square.activeLinkIcon {
+    color: var(--textColor);
+}
 
+.projectText.active-Link {
+  color: var(--textColor);
+}
 /* contact section */
 
 .contacts {
@@ -441,10 +471,10 @@
     margin-top: 50px;
 }
 
-.input-container button {
+.btns {
     color:var(--textColor);
     cursor: pointer;
-    border: 1px solid #86868b;
+    border: 1px solid lightslategray;
     background-color: transparent;
     border-radius: 10px;
     float: left;
@@ -457,8 +487,13 @@
     transition: 0.5s;
 }
 
-.input-container button:hover {
-    border: 1.5px solid var(--primaryColor);
+.btns:hover {
+  background-color: var(--primaryColor);
+}
+
+.btns.active-btn:hover {
+   color:var(--secondaryTextColor);
+   background-color: var(--textColor);
 }
 
 
@@ -471,7 +506,7 @@
     width: 500px;
 }
 
-.input-col .fa-solid {
+.inputIcon {
     color:var(--textColor);
     padding: 20px;
     font-size: 20px;
@@ -480,9 +515,14 @@
     transition: 0.5s;
 }
 
-.input-col:hover>.fa-solid {
+.input-col:hover> .inputIcon {
     color: var(--primaryColor);
 }
+
+.input-col.active-inputIcon:hover>.inputIcon{
+    color:  rgba(14,30,174,1);
+}
+
 
 .input-col input {
     background-color: transparent;
@@ -551,7 +591,7 @@
 }
 
 .left-contacts-details p {
-    color:var(--textColor)smoke;
+    color:var(--textColor);
 }
 
 .left-contacts-details>.socials-left-details {
@@ -586,9 +626,9 @@
 }
 
 .socials-left-details .fa-brands {
-  color: deeppink;
+  color: var(--textColor);
   cursor: pointer;
-  border: 1px solid deeppink;
+  border: 1px solid var(--primaryColor);
   background-color: transparent;
   border-radius: 50%;
   padding: 8px;
@@ -631,6 +671,9 @@ footer .footer p {
     transition: all 0.4s ease;
     padding: 5px;
     position: relative;
+  }
+  .label.active-label {
+    border: 2px solid var(--textColor);
   }
   
   .label::before {
@@ -683,6 +726,11 @@ footer .footer p {
     overflow: hidden;
   }
   
+  .label .circle.active-cricle {
+    background-color: var(--textColor);
+  }
+  
+
   .label .circle .iconSvg {
     color: var(--textColor);
     width: 30px;
@@ -692,7 +740,12 @@ footer .footer p {
     transform: translate(-50%, -50%);
     transition: all 0.4s ease;
   }
+ 
 
+  .label .circle .iconSvg.activesvg {
+    color: var(--secondaryTextColor);
+  }
+ 
   
   .label .circle .square {
     aspect-ratio: 1;
@@ -713,15 +766,13 @@ footer .footer p {
     position: absolute;
     left: 0;
     top: 0;
-    background-color:var(--primaryColor);
+    background-color: var(--primaryColor);
     width: 100%;
     height: 0;
     transition: all 0.4s ease;
   }
-  
-  .label .circle.active-circle {
-    background-color: var(--textColor);
-  }
+
+
   .label:has(.input:checked) {
     width: 57px;
     animation: installed 0.4s ease 3.5s forwards;
@@ -758,7 +809,7 @@ footer .footer p {
   .label .input:checked ~ .title:last-child {
     animation: showInstalledMessage 0.4s ease 3.5s forwards;
   }
-  
+
   @keyframes pulse {
     0% {
       scale: 0.95;
