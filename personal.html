@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="personal.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -26,17 +27,17 @@
         </div>
 
         <div class="header-content">
-            <h2>Hello I'm </h2>
-            <h2 class="name">lebogang Matshinini</h2>
-            <p> A front end UI developer, i create website with dynamic design <br>
+            <h2 class="text">Hello I'm </h2>
+            <h2 class="name text">lebogang Matshinini</h2>
+            <p class="text"> A front end UI developer, i create website with dynamic design <br>
                 to ensures content stands out effortlessly.</p>
             <div class="socials">
 
                 <label class="label">
                     <input type="checkbox" class="input" />
                     <span class="circle">
-                        <svg class="iconSvg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 24 24">
+                        <svg class="iconSvg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24">
 
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="1.5" d="M12 19V5m0 14-4-4m4 4 4-4"></path>
@@ -47,10 +48,10 @@
                     <p class="title">Open</p>
                 </label>
 
-                <i class="fa-brands fa-instagram" id="icon"></i>
-                <i class="fa-brands fa-linkedin" id="icon"></i>
-                <i class="fa-brands fa-twitter" id="icon"></i>
-                <i class="fa-brands fa-facebook" id="icon"></i>
+                <i class="fa-brands fa-instagram icons" id="icon"></i>
+                <i class="fa-brands fa-linkedin  icons" id="icon"></i>
+                <i class="fa-brands fa-twitter  icons" id="icon"></i>
+                <i class="fa-brands fa-facebook  icons" id="icon"></i>
             </div>
         </div>
 
@@ -62,14 +63,14 @@
             <div class="about-text">
 
                 <div class="right">
-                    <img src="images/about-img2.jpg" alt="">
+                    <img class="aboutImg" src="images/about-img2.jpg" alt="">
                 </div>
 
                 <div class="left-container">
                     <div class="left">
                         <h2 class="headerSection">about me</h2>
-                        <p>
-                            I am an ICT graduate from the University of Sol Plaatje with a strong focus on web
+                        <p class="aboutText">
+                            I am an ICT student from the University of Sol Plaatje with a strong focus on web
                             development. I
                             am deeply committed to continuous learning and i value collaboration. I
                             look forward to opportunities where I can apply my skills, solve complex problems, and make
@@ -78,7 +79,7 @@
                         </p>
                     </div>
 
-                    <div class="tabs-container">
+                    <div class="tabs-container bottom">
                         <div class="tab-container">
                             <p class="tabs active-tab" onclick="openTab('Skill')">skill</p>
                             <p class="tabs" onclick="openTab('Experience')">Experience</p>
@@ -120,7 +121,7 @@
 
             <div class="projects">
 
-                <div class="projects1">
+                <div class="projects1 bottom">
                     <img src="images/test19.png" alt="">
                     <div class="project-content">
                         <h3>Honda Bike Museum</h3>
@@ -131,7 +132,7 @@
                         <a href="#" class="projectText">view<i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="projects1">
+                <div class="projects1 bottom">
                     <img src="images/construction1.jpg" alt="">
                     <div class="project-content">
                         <h3>Brick & Beam Construction</h3>
@@ -141,7 +142,7 @@
                         <a href="#" class="projectText">view<i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="projects1">
+                <div class="projects1 bottom">
                     <img src="images/massage1.jpg" alt="">
                     <div class="project-content">
                         <h3>Blissful & Balance Touch</h3>
@@ -173,20 +174,22 @@
                     <h2 class="headerSection">contact me</h2>
                     <div class="left-contacts-details">
 
-                        <p><i class="fa-solid fa-paper-plane"></i>lebogangMatshinini@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>0728409072</p>
+                        <p class="text"><i class="fa-solid fa-paper-plane"></i>lebogangMatshinini@gmail.com</p>
+                        <p class="text"><i class="fa-solid fa-phone"></i>0728409072</p>
 
                         <div class="socials-left-details">
-                            <i class="fa-brands fa-instagram" id="icon"></i>
-                            <i class="fa-brands fa-linkedin" id="icon"></i>
-                            <i class="fa-brands fa-twitter" id="icon"></i>
-                            <i class="fa-brands fa-facebook" id="icon"></i>
+                            <i class="fa-brands fa-instagram icon" id="icon"></i>
+                            <i class="fa-brands fa-linkedin icon" id="icon"></i>
+                            <i class="fa-brands fa-twitter icon" id="icon"></i>
+                            <i class="fa-brands fa-facebook icon" id="icon"></i>
                         </div>
 
                         <label class="label">
                             <input type="checkbox" class="input" />
-                            <span class="circle"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24">
+                            <span class="circle">
+                                <svg class="iconSvg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24">
+        
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="1.5" d="M12 19V5m0 14-4-4m4 4 4-4"></path>
                                 </svg>
@@ -195,6 +198,7 @@
                             <p class="title">Download CV</p>
                             <p class="title">Open</p>
                         </label>
+
                     </div>
                 </div>
 
@@ -229,8 +233,17 @@
     <!-- footer -->
 
     <footer>
+
         <div class="footer">
-            <p>copyright @2024</p>
+            <div class="left-footer">
+                <h4>2024 all rights reserved | @ Lebogang Peter Matshinini</h4>
+            </div>
+            <div class="right-footer">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
         </div>
     </footer>
 
