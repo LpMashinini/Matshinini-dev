@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <link rel="stylesheet" href="LuxeJewel.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+
+    <section class="header-section" id="home">
+
+      <div class="navbar">
+
+        <nav id="nav">
+          <h1 class="logo">Luxe jewel</h1>
+          <ul id="sidemenu">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <li><a href="#newArrival">in coming</a></li>
+            <li><a href="shop.html">products</a></li>
+            <li><a href="#jewelleryBox">gift</a></li>
+            <li><a href="#about-us">about us</a></li>
+            <i class="fa-solid fa-user"></i>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+      </div>
+
+      <!--header content-->
+      <div class="header-content">
+        <img src="images/BEST.webp" class="backimg" />
+        <div class="content">
+          <h2>Feel Your Style</h2>
+          <p>
+            explore your style , get your shine , with our waterproof
+            jewelleries.
+          </p>
+        </div>
+      </div>
+
+      <!--cart-->
+      <div class="cart">
+        <!--close cart-->
+        <i class="fa-solid fa-xmark close"></i>
+
+        <h2 class="cart-tittle">your cart</h2>
+        <!--content-->
+        <div class="cart-content"></div>
+        <!--cart total-->
+        <div class="total">
+          <div class="total-title">total</div>
+          <div class="total-price">0</div>
+        </div>
+
+        <button class="buy-btn">purchase</button>
+      </div>
+
+    </section>
+
+    <!--login form-->
+    <div class="login-container">
+
+      <i class="fa-solid fa-xmark login-close"></i>
+
+      <h2 class="title">sign up</h2>
+
+      <!--name-->
+        <div class="inputField">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="name" id="inputText" required/>
+        </div>
+  
+        <!--password-->
+        <div class="inputField">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" placeholder="password" id="pass" required />
+        </div>
+  
+        <!--email-->
+        <div class="inputField">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="email" id="emailInput" required/>
+        </div>
+        <div class="inputField" id="checkbox-input">
+          <input type="checkbox" class="checkBox" required/>
+          <p>Remeber me</p>
+        </div>
+        <div class="inputField">
+          <button type="submit" class="btn" id="serverBtn">submit</button>
+        </div>
+      
+
+    </div>
+    <!--server-->
+
+    <div class="server-container">
+      <div class="server">
+        <i class="fa-solid fa-xmark server-close"></i>
+        <i class="fa-solid fa-thumbs-up"></i>
+        <h3>account created</h3>
+        <p>Your details have been captured.</p>
+      </div>
+    </div>
+    
+
+    <section class="body-section" id="newArrival">
+      <h2 class="header-text">incoming</h2>
+
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <div class="image-con">
+        <div class="img-item">
+          <div class="img-list">          
+            <img src="images/new1.webp" />
+            <div class="img-text">
+              <p>arrival soon</p>
+            </div>
+          </div>
+          <div class="img-list">
+            <img src="images/new2.jpg" />
+            <div class="img-text-2" id="imgText">
+              <p>arrival soon</p>
+            </div>
+          </div>
+          <div class="img-list">
+            <img src="images/new3.jpg" />
+            <div class="img-text-3">
+              <p>arrival soon</p>
+            </div>
+          </div>
+          <div class="img-list">
+            <img src="images/new4.webp" />
+            <div class="img-text-4">
+              <p>arrival soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--jewellery box-->
+
+    <section class="body-section" id="jewelleryBox">
+      <h2>gifts</h2>
+
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-left" id="prevbtn"></i>
+        <i class="fa-solid fa-arrow-right" id="nextbtn"></i>
+      </div>
+
+      <div class="image-con">
+        <div class="img-item" id="item-2">
+          <div class="product">
+            <img src="images/bag1.webp" class="item-img" />
+            <div class="img-text-4">
+              <a href="#email-input">
+                <p>Email us for order</p>
+              </a>
+            </div>
+            <div class="details">
+              <h3 class="title">cream jewellery box</h3>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/bag2.webp" alt="" class="item-img" />
+            <div class="img-text-4">
+              <a href="#email-input">
+                <p>Email us for order</p>
+              </a>
+            </div>
+            <div class="details">
+              <h3 class="title">square blush jewellery box</h3>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/bag3.webp" alt="" class="item-img" />
+            <div class="img-text-4">
+              <a href="#email-input">
+                <p>Email us for order</p>
+              </a>
+            </div>
+            <div class="details">
+              <h3 class="title">square white jewellery box</h3>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/bag4.webp" alt="" class="item-img" />
+            <div class="img-text-4">
+              <a href="#email-input">
+                <p>Email us for order</p>
+              </a>
+            </div>
+            <div class="details">
+              <h3 class="title">cream makeup & jewellery box</h3>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/bag5.webp" alt="" class="item-img" />
+            <div class="img-text-4">
+              <a href="#email-input">
+                <p>Email us for order</p>
+              </a>
+            </div>
+            <div class="details">
+              <h3 class="title">leather cream jewellery box</h3>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/bag6.webp" alt="" class="item-img" /> 
+            <div class="img-text-4">
+              <a href="#email-input">
+                <p>Email us for order</p>
+              </a>
+            </div>
+            <div class="details">
+              <h3 class="title" id="text">blue square jewellery box</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="club" id="more">
+      <h2>join our club</h2>
+      <div class="club-container">
+        <div class="left-text">
+          <p class="club-text">
+            Be the first to hear about new arrivals, promotions, style
+            inspiration and exclusive sneak peeks that Shape your own destiny
+            with pieces that reflect your favourite symbols and characters by
+            your side.
+          </p>
+         
+          <a href="https://twitter.com/Juss_Carter">
+            <button class="btn-2">
+              join us <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
+
+        <div class="right-img">
+          <img src="images/club-img.webp" class="clubImg" alt="" />
+        </div>
+
+      </div>
+    </section>
+
+    <!--about us section   https://www.whatsapp.com-->
+    <section class="club" id="about-us">
+      <h2>about us</h2>
+      <div class="club-container">
+        <div class="right-img about-us">
+          <img src="images/about-3.jpg" class="clubImg aboutImg" alt="" />
+        </div>
+        <div class="left-text">
+          <h2 class="about-title">our story</h2>
+          <p class="club-text">
+            Welcome to the website of our upscale jewellery firm, the pinnacle
+            of sophistication and elegance. You are taken to a world of classic
+            elegance and grandeur as soon as you set foot on our painstakingly
+            designed webpage. Explore our stunning collections, each carefully
+            photographed to bring out its brilliance and charm, thanks to our
+            simple and intuitive design. Luxurious nuances emerge as you browse
+            our pages, demonstrating our dedication to outstanding craftsmanship
+            and unmatched quality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--email section-->
+
+    <div class="email-header" id="email-header">
+
+      <img src="images/email.webp" alt="" />
+
+      <div class="email-content">
+        <h3>email our jewellery box</h3>
+        <p>
+          to hear about our private sales , inquiry , new arrivals , gifts & for orders
+        </p>
+
+        <div class="email-input" id="email-input">
+          <form onsubmit="sendEmail(); reset() ; return false ">
+            <input type="email" placeholder="email address" id="user"  required/>
+            <button type="submit">
+              send<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+        <p class="email-text">
+          We'll update you by email and you can unsubscribe at any time -
+          Privacy Policy.
+        </p>
+      </div>
+
+    </div>
+
+    <!--footer section -->
+
+    <section class="footer-section">
+
+      <div class="footer">
+        <div class="privacy">
+          <p class="title">terms & conds</p>
+          <ul>
+            <li><a href="">terms & conditions</a></li>
+            <li><a href="">term of use</a></li>
+            <li><a href="">guide</a></li>
+            <li><a href="">find store</a></li>
+          </ul>
+        </div>
+
+        <div class="about">
+          <p class="title">Privacy Policy</p>
+          <ul>
+            <li><a href="">career</a></li>
+            <li><a href="">help line</a></li>
+            <li><a href="">Size Guide</a></li>
+            <li><a href="">Warranty & Repairs</a></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <p class="title">follow us</p>
+          <a href="https://twitter.com/Juss_Carter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61559906334743">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+      <div class="copy">
+        <h3>@copyright reserved 2024</h3>
+      </div>
+      
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="LuxeJewel.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b0e5731180.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
