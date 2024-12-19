@@ -13,6 +13,9 @@ const inputIcons = document.querySelectorAll(".input-col");
 const projects = document.querySelectorAll(".projects1");
 const projectLinks = document.querySelectorAll(".projectText");
 const projectLinkIcons = document.querySelectorAll(".fa-up-right-from-square");
+const Header_circle = document.querySelector(".left-circle-container");
+
+
 
 const openTab = (tabName) => {
   for (tabLink of tabLinks) {
@@ -26,8 +29,10 @@ const openTab = (tabName) => {
   document.getElementById(tabName).classList.add("active-tab-content");
 };
 
+
 // Dark Mode Script
 icon.onclick = () => {
+  
   icon.classList.toggle("fa-moon");
 
   for (iconContainer of iconContainers) {
@@ -57,6 +62,7 @@ icon.onclick = () => {
                             project.classList.add("active-project")
                             projectLink.classList.add("active-Link")
                             projectLinkIcon.classList.add("activeLinkIcon")
+                            Header_circle.classList.add('active-left-circle');
                           } else {
                             iconContainer.style.background = "black";
                             Icon.classList.remove("active");
@@ -72,6 +78,7 @@ icon.onclick = () => {
                             project.classList.remove("active-project")
                             projectLink.classList.remove("active-Link")
                             projectLinkIcon.classList.remove("activeLinkIcon")
+                            Header_circle.classList.remove('active-left-circle');
                           }
                         }
                       }
@@ -87,6 +94,8 @@ icon.onclick = () => {
     }
   }
 };
+
+
 
 // Scroll script
 
@@ -125,6 +134,10 @@ ScrollReveal().reveal(".headerSection",{
 ScrollReveal().reveal(".aboutText",{
   delay: 300,
   origin: "right",
+});
+ScrollReveal().reveal(".left-circle-container",{
+  delay: 300,
+  origin: "top",
 });
 
 ScrollReveal().reveal(".bottom",{
