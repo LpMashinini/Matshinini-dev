@@ -16,7 +16,7 @@ const projectLinkIcons = document.querySelectorAll(".fa-up-right-from-square");
 const Header_circle = document.querySelector(".left-circle-container");
 
 
-
+// skils/education/experince script
 const openTab = (tabName) => {
   for (tabLink of tabLinks) {
     tabLink.classList.remove("active-tab");
@@ -105,8 +105,6 @@ ScrollReveal({
   distance: "100px",
   delay: 500,
 });
-
-
 ScrollReveal().reveal(".text",{
   delay: 300,
   origin: "top",
@@ -115,22 +113,18 @@ ScrollReveal().reveal(".icons",{
   delay: 300,
   origin: "bottom",
 });
-
 ScrollReveal().reveal(".label",{
   delay: 300,
   origin: "left",
 });
-
 ScrollReveal().reveal(".aboutImg",{
   delay: 300,
   origin: "left",
 });
-
 ScrollReveal().reveal(".headerSection",{
   delay: 300,
   origin: "top",
 });
-
 ScrollReveal().reveal(".aboutText",{
   delay: 300,
   origin: "right",
@@ -139,22 +133,18 @@ ScrollReveal().reveal(".left-circle-container",{
   delay: 300,
   origin: "top",
 });
-
 ScrollReveal().reveal(".bottom",{
   delay: 300,
   origin: "bottom",
 });
-
 ScrollReveal().reveal(".btns",{
   delay: 300,
   origin: "left",
 });
-
 ScrollReveal().reveal(".input-col",{
   delay: 300,
   origin: "right",
 });
-
 ScrollReveal().reveal(".icon",{
   delay: 300,
   origin: "right",
