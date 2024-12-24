@@ -13,225 +13,228 @@ const productBox = document.querySelectorAll(".product-box");
 
 
 
+/*
+ The following scripts are for displaying 
+ selected bike model and hiding unselected model
+ */
 
 
-
-all_models_Btn.addEventListener("click", () =>{
+all_models_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].classList == "product-box"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].classList == "product-box") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
 
 
-cbrBtn.addEventListener("click", () =>{
+cbrBtn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "cbr"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "cbr") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
-dual_purpose_Btn.addEventListener("click", () =>{
+dual_purpose_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "dual-purpose"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "dual-purpose") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
-})
 
-
-streetBtn.addEventListener("click", () =>{
-
-    for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
-
-            if(productBox[i].id == "street"){
-                productBox[i].style.display = "block";
-            }else{
-                productBox[i].style.display = "none";
-            }
-        
-        
-        }
-    
-    }
-
-
-   
 })
 
 
-tourers_Btn.addEventListener("click", () =>{
+streetBtn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "tourers"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "street") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
 
-scooters_Btn.addEventListener("click", () =>{
+tourers_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "scooter"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "tourers") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
 
-enduro_Btn.addEventListener("click", () =>{
+scooters_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "enduro"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "scooter") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
 
-moto_x_Btn.addEventListener("click", () =>{
+enduro_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "moto-x"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "enduro") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
 
-kids_Btn.addEventListener("click", () =>{
+moto_x_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "kids"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "moto-x") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
 })
 
-atv_utility_Btn.addEventListener("click", () =>{
+
+kids_Btn.addEventListener("click", () => {
 
     for (let i = 0; i < productBox.length; i++) {
-       
-        for (let i = 0; i <productImg.length; i++) {
 
-            if(productBox[i].id == "atv-utility"){
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "kids") {
                 productBox[i].style.display = "block";
-            }else{
+            } else {
                 productBox[i].style.display = "none";
             }
-        
-        
+
+
         }
-    
+
     }
 
 
-   
+
+})
+
+atv_utility_Btn.addEventListener("click", () => {
+
+    for (let i = 0; i < productBox.length; i++) {
+
+        for (let i = 0; i < productImg.length; i++) {
+
+            if (productBox[i].id == "atv-utility") {
+                productBox[i].style.display = "block";
+            } else {
+                productBox[i].style.display = "none";
+            }
+
+
+        }
+
+    }
+
+
+
 })
 
 

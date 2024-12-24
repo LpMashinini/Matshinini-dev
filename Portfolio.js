@@ -17,6 +17,7 @@ const Header_circle = document.querySelector(".left-circle-container");
 
 
 // skils/education/experince script
+
 const openTab = (tabName) => {
   for (tabLink of tabLinks) {
     tabLink.classList.remove("active-tab");

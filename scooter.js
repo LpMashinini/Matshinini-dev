@@ -1,3 +1,4 @@
+
 const gamepad = document.querySelector(".fa-gauge-high");
 const stopwatch = document.querySelector(".fa-shield");
 const sprayCan = document.querySelector(".fa-spray-can");
@@ -15,6 +16,7 @@ const textColor = document.querySelector(".textColor");
 
 
 gamepad.addEventListener("click", () => {
+  //Safety
   Control1.style.display = "block";
   Control2.style.display = "block";
 
@@ -29,6 +31,7 @@ gamepad.addEventListener("click", () => {
 });
 
 sprayCan.addEventListener("click", () => {
+  // Bodywork
   efficiency1.style.display = "block";
   efficiency2.style.display = "block";
 
@@ -43,6 +46,7 @@ sprayCan.addEventListener("click", () => {
 });
 
 stopwatch.addEventListener("click", () => {
+  // Performance
   exterior1.style.display = "block";
   exterior2.style.display = "block";
 
@@ -59,13 +63,16 @@ stopwatch.addEventListener("click", () => {
 
 
 
+// bike color selection script
 color1.addEventListener('click',() => {
+  // color 1
   imgBike.src = "images/scooter2.png";
   textColor.innerHTML = "White Non-Metallic";
 
 })
 
 color2.addEventListener('click',() => {
+  // color 2
   imgBike.src = "images/Elite125_Colours_Red.png";
   textColor.innerHTML = "Red Non-Metallic";
 })

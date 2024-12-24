@@ -6,15 +6,51 @@
     font-family: "Lora", serif;
  }
 
+
+ :root {
+
+  /* color container */
+
+  --textColor: black;
+  --textColor2: white;
+  --bgColor: rgb(255, 255, 255);
+  --navBgColor: rgba(45, 44, 44, 0.308);
+  --borderColor: rgb(182, 180, 180);
+  --boxSH: -20px 90px -10px 90px rgba(107, 107, 107, 0);
+  --textButton: rgb(9, 27, 61);
+  --iconBg:rgb(184, 184, 184);
+  --footerBtn: rgb(255, 54, 54);
+  --colorDiv: rgb(198, 1, 1);
+  --colorDiv4: rgb(184, 184, 184);
+  --colorDiv3:  rgb(228, 227, 227);
+  --footerSecBg: rgb(31, 32, 35);
+  --color1: red;
+  --span: rgb(194, 187, 187);
+  --selectionBg: rgb(200, 200, 200);
+  --spanBdr: 2px solid rgb(194, 187, 187);
+  --color2: rgb(54, 51, 51);
+  --shopIcon: rgb(48, 48, 48);
+  --footerBg: rgb(31, 32, 35);
+  --imgConBg: rgb(119, 118, 118);
+  --inputColor: rgb(195, 195, 195) --inputBtn: rgb(229, 12, 12);
+  --inputBdr:  1px solid rgb(196, 196, 196);
+  --inputbdr2: 2px solid gray;
+  --font1--: Georgia, "Times New Roman", Times, serif;
+  --font2--: "Host Grotesk", sans-serif;
+  --backGround: linear-gradient(rgba(10, 10, 10, 0.134), rgba(35, 34, 34, 0.462)),
+  url("images/viewModelmg.jpg");
+
+}
+
+
 .container {
     width: 100%;
     height: 100vh;
 }
 
 .nav-container {
-    background: rgba(45, 44, 44, 0.308);
-    ;
-    box-shadow: -20px 90px -10px 90px rgba(19, 19, 19, 1);
+    background: var(--navBgColor);
+    box-shadow:  var(--boxSH);
     backdrop-filter: blur(10px);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -28,7 +64,7 @@
 }
 
 .logo {
-    color: white;
+    color: var(--textColor2);
     text-transform: capitalize;
     font-size: 2rem;
 }
@@ -49,7 +85,7 @@
 }
 
 .nav-container ul li a {
-    color: white;
+    color: var(--textColor2);
     cursor: pointer;
     text-decoration: none;
     text-transform: capitalize;
@@ -63,7 +99,7 @@
     position: absolute;
     width: 0%;
     height: 3px;
-    background-color: white;
+    background-color: var(--textColor2);
     border-radius: 5px;
     bottom: -12px;
     left: 30%;
@@ -75,11 +111,12 @@
 }
 
 
+/* header content starts here */
+
 .imgCon {
     width: 100%;
     height: 480px;
-    background: linear-gradient(rgba(10, 10, 10, 0.134), rgba(35, 34, 34, 0.462)),
-        url("images/viewModelmg.jpg");
+    background: var(--backGround);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -87,7 +124,7 @@
 }
 
 .imgCon h3 {
-    color: white;
+    color: var(--textColor2);
     z-index: 1;
     font-size: 3rem;
     text-transform: uppercase;
@@ -99,7 +136,7 @@
 .imgCon span {
     width: 70px;
     height: 5px;
-    background-color: red;
+    background-color: var(--color1);
     position: absolute;
     top: 40%;
     left: 10%;
@@ -107,7 +144,7 @@
 
 .model-container .models-types {
     padding: 20px 100px;
-    background-color: rgb(54, 51, 51);
+    background-color: var(--color2);
     width: 100%;
 }
 
@@ -123,7 +160,7 @@
 }
 
 .model-container .models-types ul li button{
-    color: rgb(228, 227, 227);
+    color: var(--colorDiv3);
     cursor: pointer;
     border: none;
     outline: none;
@@ -139,7 +176,7 @@
     position: absolute;
     bottom: -70%;
     left: 30%;
-    background: white;
+    background: var(--textColor2);
     border-radius: 5px;
     width: 0%;
     height: 3px;
@@ -150,6 +187,7 @@
  }
 
  
+/* bike models section starts here */
 
 .shop-container {
     padding: 0px 70px;
@@ -164,7 +202,7 @@
     flex: none;
   }
   .product-box {
-    border-right: 1px solid rgb(196, 196, 196) ;
+    border-right: var(--inputBdr) ;
     margin-top: 20px;
     width: 430px;
     position: relative;
@@ -176,7 +214,7 @@
     margin-bottom: 10px;
   }
   .product-title {
-    color: rgb(184, 184, 184);
+    color: var(--iconBg);
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -188,11 +226,11 @@
   }
   
   .product-box:hover > .box-content > .product-title{
-    color: red;
+    color: var(--color1);
   }
   
   .product-box .checkBox[type="checkbox"] {
-    accent-color: red;
+    accent-color: var(--color1);
     margin-left: 20px;
     margin-top: -10px;
     width: 20px;
@@ -205,22 +243,22 @@
     flex-direction: column;
   }
   .price {
-    color: black;
+    color:  var(--textColor);
     font-size: 20px;
   }
 
 .box-content span {
     width: 75px;
     height: 5px;
-    background-color: red;
+    background-color: var(--color1);
     border-radius: 3px;
     margin-top: 10px;
 }
 
-
+/* footer section style */
 .footer-section {
     padding: 60px 50px;
-    background-color: rgb(31, 32, 35);
+    background-color: var(--footerSecBg);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
@@ -234,7 +272,7 @@
   }
   
   .footer-content {
-    color: white;
+    color: var(--textColor2);
     text-align: center;
   }
   
@@ -255,7 +293,7 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: white;
+    background-color: var(--textColor2);
     border-radius: 5px;
     bottom: -12px;
     left: 30%;
@@ -270,26 +308,26 @@
     display: block;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--textColor2);
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 20px;
   }
   
   .footer-content button {
-    color: white;
+    color: var(--textColor2);
     cursor: pointer;
-    background-color: rgb(255, 54, 54);
+    background-color: var(--footerBtn);
     border-radius: 5px;
     padding: 10px;
     text-align: center;
     text-transform: capitalize;
     font-size: 18px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font1--);
   }
   
   .footer-section .copy {
-    color: white;
+    color: var(--textColor2);
     text-align: center;
     text-transform: capitalize;
     position: absolute;

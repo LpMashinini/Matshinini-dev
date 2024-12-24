@@ -15,7 +15,25 @@
   --primaryColor: deeppink;
   --secondaryColor: rgb(22, 21, 21);
   --textColor: white;
+  --textFillColor :  #e7dfd6;
+  --fillColor: rgb(255, 255, 255);
   --secondaryTextColor: black;
+  --footerbgColor: rgba(42, 41, 41, 0.968);
+  --inputColor: #f0f0f1;
+  --inputColBg:  #86868b;
+  --Hcolor:  rgba(14, 30, 174, 1);
+  --h2BgColor: linear-gradient(0deg, #86868b 0%, #bdc2c9 100%);
+  --h2Color:  #6e0542;
+  --pColor:  #86868b;
+  --pBgColor: linear-gradient(0deg, #86868b 0%, #bdc2c9 100%);
+  --btnsBdr: 1px solid lightslategray;
+  --projectbg: linear-gradient(rgba(0, 0, 0, 0.6), #9c0857);
+  --projectHbg: linear-gradient(rgba(0, 0, 0, 0.714), #151c9f);
+  --bsh1-: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  --bsh2-: 0 0 0 16px rgba(255, 255, 255, 0);
+  --bsh3-:  0 0 0 0 rgba(255, 255, 255, 0);
+  --font--: Arial, Helvetica, sans-serif;
+  --font2: "Playfair Display", serif;
 }
 
 /* Header styles starts here */
@@ -102,7 +120,7 @@
   font-size: 25px;
 }
 .toggleContainer .fa-solid.activeIcon {
-  color: black;
+  color: var(--secondaryTextColor);
   font-size: 25px;
 }
 
@@ -143,7 +161,7 @@
   filter: drop-shadow(0px 0px 5px var(--primaryColor));
 }
 #checkbox:checked + .switch svg path {
-  fill: rgb(255, 255, 255);
+  fill: var(--fillColor);
 }
 
 .header-content-container {
@@ -191,10 +209,10 @@
   left: 60px;
   text-transform: capitalize;
   font-size: 1.9em;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #86868b;
+  font-family: var(--font--);
+  color: var(--pColor);
   font-weight: 600;
-  background: linear-gradient(0deg, #86868b 0%, #bdc2c9 100%);
+  background: var(--pBgColor);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -203,10 +221,10 @@
 .header-content h2 {
   text-transform: capitalize;
   font-size: 1.9em;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #6e0542;
+  font-family: var(--font--);
+  color:var(--h2Color);
   font-weight: 600;
-  background: linear-gradient(0deg, #86868b 0%, #bdc2c9 100%);
+  background: var(--h2BgColor);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -217,7 +235,7 @@
   text-align: center;
   text-transform: capitalize;
   font-size: 2.5rem;
-  -webkit-text-fill-color: #e7dfd6;
+  -webkit-text-fill-color: var(--textFillColor);
   font-weight: 1000;
   margin-bottom: 20px;
 }
@@ -266,7 +284,7 @@
 /* about section  styles starts here*/
 
 .about-section {
-  background-color: rgb(22, 21, 21);
+  background-color: var(--secondaryColor);
   padding: 70px 60px;
 }
 
@@ -379,7 +397,7 @@
 /* projects section styles starts here */
 
 .projects-section {
-  background-color: rgb(22, 21, 21);
+  background-color: var(--secondaryColor);
   padding: 70px 50px;
   overflow: hidden;
 }
@@ -423,7 +441,7 @@
 
 .project-content {
   color: var(--textColor);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #9c0857);
+  background: var(--projectbg);
   position: absolute;
   left: 0px;
   bottom: 0;
@@ -439,7 +457,7 @@
 }
 
 .projects1.active-project:hover > .project-content {
-  background: linear-gradient(rgba(0, 0, 0, 0.714), #151c9f);
+  background: var(--projectHbg);
 }
 
 .project-content h3 {
@@ -472,7 +490,7 @@
 /* contact section styles starts here */
 
 .contacts {
-  background-color: rgb(22, 21, 21);
+  background-color: var(--secondaryColor);
   padding: 70px 50px;
 }
 
@@ -489,7 +507,7 @@
 .btns {
   color: var(--textColor);
   cursor: pointer;
-  border: 1px solid lightslategray;
+  border: var(--btnsBdr);
   background-color: transparent;
   border-radius: 10px;
   float: left;
@@ -512,7 +530,7 @@
 }
 
 .input-col {
-  background-color: #86868b;
+  background-color: var(--inputColBg);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -534,7 +552,7 @@
 }
 
 .input-col.active-inputIcon:hover > .inputIcon {
-  color: rgba(14, 30, 174, 1);
+  color: var(--Hcolor);
 }
 
 .input-col input {
@@ -550,7 +568,7 @@
 }
 
 .input-col input::placeholder {
-  color: #f0f0f1;
+  color: var(--inputColor);
   font-size: 14px;
   text-transform: capitalize;
   padding: 8px;
@@ -570,7 +588,7 @@
 }
 
 .input-col textarea::placeholder {
-  color: #f0f0f1;
+  color: var(--inputColor);
   font-size: 19px;
   text-transform: capitalize;
   position: absolute;
@@ -598,7 +616,7 @@
 }
 
 .left-contacts-details p .fa-solid {
-  color: var(--textColor) smoke;
+  color: var(--textColor);
   margin: 15px 15px 10px 0px;
 }
 
@@ -654,6 +672,7 @@
 }
 
 /* download button styles  */
+
 .label {
   background-color: transparent;
   border: 2px solid var(--primaryColor);
@@ -716,7 +735,7 @@
   align-items: center;
   transition: all 0.4s ease;
   position: relative;
-  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  box-shadow: 0 0 0 0 var(--fillColor);
   overflow: hidden;
 }
 
@@ -803,15 +822,15 @@
 @keyframes pulse {
   0% {
     scale: 0.95;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow: var(--bsh1-);
   }
   70% {
     scale: 1;
-    box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    box-shadow: var(--bsh2-);
   }
   100% {
     scale: 0.95;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: var(--bsh3-);
   }
 }
 
@@ -867,14 +886,14 @@
 footer {
   width: 100%;
   padding: 20px 0px;
-  background-color: rgba(42, 41, 41, 0.968);
+  background-color: var(--footerbgColor);
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font2);
   padding: 0px 50px;
 }
 

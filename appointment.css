@@ -5,10 +5,19 @@
   scroll-behavior: smooth;
 }
 
+:root{
+  /* color container */
+  --textColor: salmon;
+  --textColor2: white;
+  --spanColor: rgb(194, 187, 187);
+  --borderColor: gray;
+  --footerColor: rgba(14, 33, 48, 0.805);
+  --backGround: linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 24, 29, 0.47)), url("images/appointment.jpg");
+}
 .container {
   width: 100%;
   height: 700px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 24, 29, 0.47)), url("images/appointment.jpg");
+  background:var(--backGround);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,42 +30,18 @@
   padding: 20px 40px;
 }
 
-.nav-container ul {
-  display: flex;
-}
-
-.nav-container ul li {
-  list-style: none;
-  margin: 0px 10px;
-}
-
-.nav-container ul li a {
-  color: white;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.nav-container ul li .appointment {
-  color: white;
-  background-color: salmon;
-  border-radius: 15px;
-  padding: 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
 .logo  a{
-  color: white;
+  color: var(--textColor2);
   font-size: 30px;
   text-decoration: none;
 }
 
 .logo span {
-  color: salmon;
+  color: var(--textColor);
 }
 
 .logo-container .logo-line {
-  background-color: salmon;
+  background-color: var(--textColor);
   border-radius: 5px;
   width: 150px;
   height: 3px;
@@ -70,9 +55,6 @@
   flex-direction: column;
 }
 
-
-
-
 .header-text {
   width: 100%;
   display: flex;
@@ -83,14 +65,14 @@
 }
 
 .header-text h2 {
-  color: white;
+  color: var(--textColor2);
   font-size: 4.5rem;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
 
 .header-text h2 span {
-  color: salmon;
+  color: var(--textColor);
   border-radius: 5px;
   width: 150px;
   height: 3px;
@@ -99,17 +81,17 @@
 }
 
 .header-text p {
-  color: white;
+  color: var(--textColor2);
   font-size: 18px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .header-text .fa-arrow-down {
-  color: white;
+  color: var(--textColor2);
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid salmon;
+  border: 2px solid var(--textColor);
   border-radius: 50%;
   outline: none;
   text-transform: capitalize;
@@ -135,7 +117,7 @@
 }
 
 .header-text h2 {
-  color: white;
+  color: var(--textColor2);
   font-size: 4.5rem;
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -152,12 +134,12 @@
 }
 
 .appointment-header-text h2 {
-  color: salmon;
+  color: var(--textColor);
   font-size: 2.5rem;
 }
 
 .appointment-header-text span {
-  background-color: salmon;
+  background-color: var(--textColor);
   border-radius: 5px;
   width: 90px;
   height: 4px;
@@ -192,68 +174,22 @@
 }
 
 .inputbox span {
-  color: rgb(194, 187, 187);
+  color: var(--spanColor);
 }
 
 .inputbox input {
   width: 100%;
-  border: 2px solid gray;
+  border: 2px solid var(--borderColor);
   outline: none;
   padding: 20px;
   margin-top: 8px;
 }
 
 .inputbox input::placeholder {
-  color: rgb(194, 187, 187);
+  color: var(--spanColor);
   font-size: 16px;
   text-transform: capitalize;
 }
-
-.input-btn {
-  width: 350px;
-  margin: 22px 0 22px -170px;
-  padding: 20px;
-  text-align: center;
-  background-color: transparent;
-  border: 2px solid red;
-}
-
-.input-btn button {
-  color: red;
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-  background-color: transparent;
-  font-size: 18px;
-  text-transform: capitalize;
-}
-
-.input-btn .fa-solid {
-  color: red;
-  font-size: 15px;
-}
-
-
-.checkInput {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.checkInput input[type="checkbox"] {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  margin-right: 9px;
-  border: 2px solid gray;
-  background-color: transparent;
-}
-
-input[type="checkbox"]:checked {
-  background-color: red;
-  border: 2px solid red;
-}
-
 
 .checkInput p {
   margin-left: 5px;
@@ -264,7 +200,6 @@ input[type="checkbox"]:checked {
   text-decoration: underline;
 }
 
-
 .inputbox-btn {
   width: 220px;
   margin: 30px 0px 0px -10px;
@@ -272,10 +207,10 @@ input[type="checkbox"]:checked {
 
 .inputbox-btn button {
   width: 100%;
-  color: salmon;
+  color: var(--textColor);
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid salmon;
+  border: 2px solid var(--textColor);
   border-radius: 20px;
   outline: none;
   padding: 15px 30px;
@@ -285,7 +220,7 @@ input[type="checkbox"]:checked {
 }
 
 
-/* footer */
+/* footer section style*/
 
 .footer-section {
   position: relative;
@@ -293,7 +228,7 @@ input[type="checkbox"]:checked {
 
 .footer {
   width: 100%;
-  background-color: rgba(14, 33, 48, 0.805);
+  background-color: var(--footerColor);
 
   position: absolute;
   left: 0;
@@ -306,10 +241,10 @@ input[type="checkbox"]:checked {
 }
 
 .footer-content .fa-arrow-up {
-  color: white;
+  color: var(--textColor2);
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid salmon;
+  border: 2px solid var(--textColor);
   border-radius: 50%;
   outline: none;
   text-transform: capitalize;
@@ -321,13 +256,16 @@ input[type="checkbox"]:checked {
 }
 
 .left-footer h4 {
-  color: white;
+  color: var(--textColor2);
   text-transform: capitalize;
 }
 
 .right-footer .fa-brands {
-  color: white;
+  color: var(--textColor2);
   cursor: pointer;
   margin: 0px 20px;
   font-size: 19px;
 }
+
+
+/*awaiting media-query for responsiveness*/

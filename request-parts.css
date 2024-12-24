@@ -6,14 +6,50 @@
     font-family: "Lora", serif;
  }
 
+ :root {
+
+  /* color container */
+
+  --textColor: black;
+  --textColor2: white;
+  --bgColor: rgb(255, 255, 255);
+  --navBgColor:  rgba(45, 44, 44, 0.308);
+  --borderColor:  rgb(182, 180, 180);
+  --boxSH: -20px 90px -10px 90px rgba(107, 107, 107, 0);
+  --textButton:  rgb(9, 27, 61);
+  --iconBg:  rgb(9, 47, 109);
+  --footerBtn:  rgb(255, 54, 54);
+  --colorDiv: rgb(198, 1, 1);
+  --colorDiv4:  rgb(234, 230, 230);
+  --colorDiv3:  rgb(204, 204, 204);
+  --footerSecBg: rgb(31, 32, 35);
+  --color1: red;
+  --span:  rgb(194, 187, 187);
+  --spanBdr: 2px solid rgb(194, 187, 187);
+  --color2: blue;
+  --shopIcon: rgb(48, 48, 48);
+  --footerBg: rgb(31, 32, 35);
+  --imgConBg:  rgb(119, 118, 118);
+  --inputColor: rgb(194, 187, 187);
+  --inputBtn: rgb(229, 12, 12);
+  --inputBdr: 2px solid rgb(194, 187, 187);
+  --inputbdr2: 2px solid gray;
+  --font1--: Georgia, "Times New Roman", Times, serif;
+  --font2--: "Host Grotesk", sans-serif;
+  --backGround: linear-gradient(rgba(10, 10, 10, 0.758), rgba(28, 27, 27, 0.462)),
+  url("images/parts.jpg");
+
+ }
+
 .container {
   width: 100%;
   height: 100vh;
 }
 
+/* header styles starts here */
 .nav-container {
-  background: rgba(45, 44, 44, 0.308);
-  box-shadow: -20px 90px -10px 90px rgba(107, 107, 107, 0);
+  background: var(--navBgColor);
+  box-shadow: var(--boxSH);
   backdrop-filter: blur(10px);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -25,25 +61,30 @@
   width: 100%;
   z-index: 2;
 }
+
 .logo {
-  color: white;
+  color: var(--textColor2);
   text-transform: capitalize;
   font-size: 2rem;
 }
+
 .logo-container a {
   text-decoration: none;
 }
+
 .nav-container ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+
 .nav-container ul li {
   margin-right: 10px;
   list-style: none;
 }
+
 .nav-container ul li a {
-  color: white;
+  color: var(--textColor2);
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
@@ -51,17 +92,19 @@
   padding: 0px 10px;
   position: relative;
 }
+
 .nav-container ul li a::before {
   content: "";
   position: absolute;
   width: 0%;
   height: 3px;
-  background-color: white;
+  background-color: var(--textColor2);
   border-radius: 5px;
   bottom: -12px;
   left: 30%;
   transition: 0.5s;
 }
+
 .nav-container ul li a:hover::before {
   width: 50%;
 }
@@ -69,13 +112,13 @@
 .header-img {
   width: 100%;
   height: 500px;
-  background: linear-gradient(rgba(10, 10, 10, 0.758), rgba(28, 27, 27, 0.462)),
-    url("images/parts.jpg");
+  background: var(--backGround);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
+
 .header-img h3,
 .line {
   position: absolute;
@@ -84,7 +127,7 @@
 }
 
 .header-img h3 {
-  color: white;
+  color: var(--textColor2);
   z-index: 1;
   font-size: 3rem;
   text-transform: uppercase;
@@ -94,11 +137,13 @@
 .header-img span {
   width: 70px;
   height: 5px;
-  background-color: red;
+  background-color: var(--color1);
   position: absolute;
   top: 40%;
   left: 10%;
 }
+
+/* body style starts here */
 
 .personal-details {
   padding: 70px 90px;
@@ -112,7 +157,7 @@
   font-size: 40px;
 }
 
-.input-Conatiner {
+.input-Container {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 10px;
@@ -138,18 +183,18 @@
   text-transform: capitalize;
 }
 .inputbox span {
-  color: rgb(194, 187, 187);
+  color: var(--span);
 }
 .inputbox input {
   width: 100%;
-  border: 2px solid rgb(194, 187, 187);
+  border: var(--inputBdr);
   outline: none;
   padding: 20px;
   margin-top: 8px;
 }
 
 .inputbox input::placeholder {
-  color: rgb(194, 187, 187);
+  color: var(--span);
   font-size: 16px;
   text-transform: capitalize;
 }
@@ -196,11 +241,11 @@
   padding: 20px;
   text-align: center;
   background-color: transparent;
-  border: 2px solid red;
+  border: 2px solid var(--color1);
 }
 
 .input-btn button {
-  color: red;
+  color: var(--color1);
   cursor: pointer;
   border: 0;
   outline: 0;
@@ -209,7 +254,7 @@
   text-transform: capitalize;
 }
 .input-btn .fa-solid {
-  color: red;
+  color: var(--color1);
   font-size: 15px;
 }
 
@@ -231,12 +276,12 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid gray;
+  border: var(--inputbdr2);
   background-color: transparent;
 }
 input[type="checkbox"]:checked {
-  background-color: red;
-  border: 2px solid red;
+  background-color: var(--color1);
+  border: 2px solid var(--color1);
 }
 
 .checkInput p {
@@ -254,9 +299,9 @@ input[type="checkbox"]:checked {
 
 .inputbox-btn button {
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: var(--bgColor);
   cursor: pointer;
-  background-color: rgb(229, 12, 12);
+  background-color: var(--inputBtn);
   border: 0;
   outline: none;
   padding: 15px 30px;
@@ -264,15 +309,16 @@ input[type="checkbox"]:checked {
   font-size: 17px;
 }
 
-.partsConatainer {
+.partsContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin-bottom: 25px;
 }
 
+/* footer section style starts here */
 .footer-section {
   padding: 60px 50px;
-  background-color: rgb(31, 32, 35);
+  background-color: var(--footerSecBg);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
@@ -286,7 +332,7 @@ input[type="checkbox"]:checked {
 }
 
 .footer-content {
-  color: white;
+  color: var(--textColor2);
   text-align: center;
 }
 
@@ -307,7 +353,7 @@ input[type="checkbox"]:checked {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: white;
+  background-color: var(--textColor2);
   border-radius: 5px;
   bottom: -12px;
   left: 30%;
@@ -322,26 +368,26 @@ input[type="checkbox"]:checked {
   display: block;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--textColor2);
   cursor: pointer;
   margin-bottom: 10px;
   font-size: 20px;
 }
 
 .footer-content button {
-  color: white;
+  color: var(--textColor2);
   cursor: pointer;
-  background-color: rgb(255, 54, 54);
+  background-color: var(--footerBtn);
   border-radius: 5px;
   padding: 10px;
   text-align: center;
   text-transform: capitalize;
   font-size: 18px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: var(--font1--);
 }
 
 .footer-section .copy {
-  color: white;
+  color: var(--textColor2);
   text-align: center;
   text-transform: capitalize;
   position: absolute;
@@ -349,3 +395,6 @@ input[type="checkbox"]:checked {
   bottom: 0;
   margin-bottom: 10px;
 }
+
+
+/*awaiting media-query for responsiveness*/

@@ -12,7 +12,12 @@ const exterior2 = document.querySelector(".Exterior1");
 
 const imgContainer = document.querySelector(".imgContainer");
 
+
+// feature and style script
+
 gamepad.addEventListener("click", () => {
+  // Control
+
   Control1.style.display = "block";
   Control2.style.display = "block";
 
@@ -27,6 +32,8 @@ gamepad.addEventListener("click", () => {
 });
 
 stopwatch.addEventListener("click", () => {
+  // Efficiency
+
   efficiency1.style.display = "block";
   efficiency2.style.display = "block";
 
@@ -41,6 +48,7 @@ stopwatch.addEventListener("click", () => {
 });
 
 sprayCan.addEventListener("click", () => {
+  // Exterior
   exterior1.style.display = "block";
   exterior2.style.display = "block";
 

@@ -5,24 +5,26 @@
   padding: 0;
 }
 
+:root {
+  --textColor: white;
+  --textColor2: red;
+  --backGround: linear-gradient(rgba(10, 10, 10, 0.638), rgba(0, 0, 0, 0.54)),
+  url("images/honda-test.jpg");
+  --boxSh:  0 4px 30px rgba(106, 106, 106, 0.955);
+  --btnBdr:  2px solid var(--textColor2);
+  --btnBg:  rgb(210, 207, 207);
+}
 .Container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(10, 10, 10, 0.638), rgba(0, 0, 0, 0.54)),
-    url("images/honda-test.jpg");
+  background: var(--backGround);
   background-size: cover;
   background-position: center;
 }
 
-
-.container {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: 100vh;
-}
 .nav-container {
   background: transparent;
-  box-shadow: 0 4px 30px rgba(106, 106, 106, 0.955);
+  box-shadow: var(--boxSh);
   backdrop-filter: blur(96px);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -35,7 +37,7 @@
   z-index: 2;
 }
 .logo {
-  color: white;
+  color: var(--textColor);
   text-transform: capitalize;
   font-size: 2rem;
 }
@@ -52,7 +54,7 @@
   list-style: none;
 }
 .nav-container ul li a {
-  color: white;
+  color: var(--textColor);
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
@@ -65,7 +67,7 @@
   position: absolute;
   width: 0%;
   height: 5px;
-  background-color: white;
+  background-color: var(--textColor);
   border-radius: 5px;
   bottom: -12px;
   left: 30%;
@@ -88,7 +90,7 @@
 }
 
 .inpuCon h2 {
-  color: white;
+  color: var(--textColor);
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
@@ -126,11 +128,11 @@
     width: 450px;
     margin-bottom: 40px;
     text-align: center;
-    background-color: rgb(210, 207, 207);
-    border: 2px solid red;
+    background-color: var(--btnBg);
+    border: var(--btnBdr);
 }
 .input-btn button {
-    color: red;
+    color: var(--textColor2);
     cursor: pointer;
     border: 0;
     outline: 0;
@@ -140,6 +142,6 @@
     text-transform: uppercase;
 }
 .input-btn .fa-solid {
-  color: red;
+  color: var(--textColor2);
   font-size: 20px;
 }

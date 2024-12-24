@@ -15,7 +15,11 @@ const imgBike = document.querySelector("#imgBike");
 const textColor = document.querySelector(".textColor");
 
 
+// feature and style script
+
 gamepad.addEventListener("click", () => {
+  // Performance
+
   Control1.style.display = "block";
   Control2.style.display = "block";
 
@@ -30,6 +34,8 @@ gamepad.addEventListener("click", () => {
 });
 
 stopwatch.addEventListener("click", () => {
+  // Bodywork
+
   efficiency1.style.display = "block";
   efficiency2.style.display = "block";
 
@@ -44,6 +50,8 @@ stopwatch.addEventListener("click", () => {
 });
 
 sprayCan.addEventListener("click", () => {
+  // Safety
+
   exterior1.style.display = "block";
   exterior2.style.display = "block";
 
@@ -60,17 +68,24 @@ sprayCan.addEventListener("click", () => {
 
 
 
+// color bike selection script
+
 color1.addEventListener('click',() => {
+  // color 1
   imgBike.src = "images/streetBike.png";
   textColor.innerHTML = "white Pearlescent";
 })
 
 color2.addEventListener('click',() => {
+  // color 2
+
   imgBike.src = "images/street-bike2.png";
   textColor.innerHTML = "Black nMetallic";
 })
 
 color3.addEventListener('click',() => {
+  // color 3
+
   imgBike.src = "images/streetBike2.png";
   textColor.innerHTML = "Red Metallic";
 })

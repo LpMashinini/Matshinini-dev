@@ -1,439 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="StoreItem.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
-    
-    <div class="navbar">
 
-      <nav id="nav">
-        <h1 class="logo"><a href="project.html"> luxe jewel</a></h1>
-        <ul id="sidemenu">    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="StoreItem.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
 
-          <input type="text" class="search" id="search">
+<body>
 
-          <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
-          
-          <i class="fa-solid fa-cart-shopping" id="count"> 
-              <span  class="item-count">0</span></i>
-        </ul>
-      </nav>
+  <div class="navbar">
 
-    </div>
+    <nav id="nav">
+      <h1 class="logo"><a href="project.html"> luxe jewel</a></h1>
+      <ul id="sidemenu">
 
-     <!--payment section-->
-     <div class="payment-structure">
-      <div class="payment-container">
-        <i class="fa-solid fa-xmark close-payment"></i>
-        <div class="user-details">
-          <div class="detail-type">
-            <img src="images/captec.png" class="bankImg" alt="">
-            <select class="banks" onclick="bankName()">
-              <option value="capitec">capitec</option>
-              <option value="nedbank">nedbank</option>
-              <option value="ABSA">ABSA</option>
-              <option value="Standard bank">Standard bank</option>
-              <option value="master card">master card</option>
-              <option value="visa">visa</option>
-            </select>
-          </div>
-          <div class="user-name">
+        <input type="text" class="search" id="search">
+
+        <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+
+        <i class="fa-solid fa-cart-shopping" id="count">
+          <span class="item-count">0</span></i>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!--payment section-->
+  <div class="payment-structure">
+
+    <div class="payment-container">
+
+      <i class="fa-solid fa-xmark close-payment"></i>
+
+      <div class="user-details">
+
+        <div class="detail-type">
+
+          <img src="images/captec.png" class="bankImg" alt="">
+
+          <select class="banks" onclick="bankName()">
+            <!-- BankName changes the image based on the type of bank selected -->
+            <option value="capitec">capitec</option>
+            <option value="nedbank">nedbank</option>
+            <option value="ABSA">ABSA</option>
+            <option value="Standard bank">Standard bank</option>
+            <option value="master card">master card</option>
+            <option value="visa">visa</option>
+          </select>
+
+        </div>
+
+        <div class="user-name">
+          <!-- display the total amount -->
           <p class="total-pay">amount:<span class="totalCart"></span></p>
-          </div>
         </div>
-        <div class="form">
-          <p>pay</p>
-          <h2>Enter your card details to pay</h2>
-          <div class="inputField-1">
-            <input type="number" placeholder="Card number" maxlength="2"/>
-          </div>
-          <div class="card-details">
-            <div class="inputField-2">
-              <input type="date"/>
-            </div>
-            <div class="inputField-2">
-              <input type="password" placeholder="cvv" maxlength="3"/>
-            </div>
-          </div>
-          <div class="btn-pay">
-            <button class="pay-btn">confirm payment</button>
-          </div>
-        </div>
+
       </div>
+
+      <div class="form">
+
+        <p>pay</p>
+        <h2>Enter your card details to pay</h2>
+        <div class="inputField-1">
+          <input type="number" placeholder="Card number" maxlength="2" />
+        </div>
+
+        <div class="card-details">
+
+          <div class="inputField-2">
+            <input type="date" />
+          </div>
+
+          <div class="inputField-2">
+            <input type="password" placeholder="cvv" maxlength="3" />
+          </div>
+
+        </div>
+
+        <div class="btn-pay">
+          <button class="pay-btn">confirm payment</button>
+        </div>
+
+      </div>
+
     </div>
 
-    <!--cart message-->
-    <div class="card-messageContainer">
-      <div class="cart-message">
-        <i class="fa-solid fa-xmark cartMessage"></i>
-        <i class="fa-solid fa-truck-fast"></i>
-        <p class="cart-title">thanks for shopping with us</p>
-        <p>Your order has been placed.</p>
-      </div>
+  </div>
+
+  <!--cart message-->
+  <div class="card-messageContainer">
+    <div class="cart-message">
+      <i class="fa-solid fa-xmark cartMessage"></i>
+      <i class="fa-solid fa-truck-fast"></i>
+      <p class="cart-title">thanks for shopping with us</p>
+      <p>Your order has been placed.</p>
+    </div>
+  </div>
+
+  <!--cart-->
+  <div class="cart">
+    <!--close cart-->
+    <i class="fa-solid fa-xmark close"></i>
+
+    <h2 class="cart-tittle">your cart</h2>
+    <!--content-->
+    <div class="cart-content">
+
+    </div>
+    <!--cart total-->
+    <div class="total">
+      <div class="total-title">total</div>
+      <div class="total-price">R0</div>
     </div>
 
-    <!--cart-->
-    <div class="cart">
-      <!--close cart-->
-      <i class="fa-solid fa-xmark close"></i>
+    <button class="buy-btn">purchase</button>
+  </div>
 
-      <h2 class="cart-tittle">your cart</h2>
-      <!--content-->
-      <div class="cart-content">
-       
-      </div>
-      <!--cart total-->
-      <div class="total">
-        <div class="total-title">total</div>
-        <div class="total-price">R0</div>
-      </div>
+  <section class="shop-container">
+    <!-- contains all images -->
 
-      <button class="buy-btn">purchase</button>
-    </div>
-
-    <section class="shop-container">
-      <h2 class="title">in store</h2>
-      <div class="shop-content">
-        <!--product box 1-->
-        <div class="product-box">
-          <img src="images/ear3.webp" alt="" class="product-img" onclick="openFullScreen()" />
-          <h2 class="product-title">crystal clear silver earrings</h2>
-          <span class="price">1500</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 2-->
-        <div class="product-box">
-          <img src="images/str11.webp" alt="" class="product-img" />
-          <h2 class="product-title">Gyptian bracelet </h2>
-          <span class="price">R495</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 3-->
-        <div class="product-box">
-          <img src="images/str2.jpg" alt="" class="product-img" />
-          <h2 class="product-title">Blue hoops silver earrings</h2>
-          <span class="price">R345</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 4-->
-        <div class="product-box">
-          <img src="images/str7.webp" alt="" class="product-img" />
-          <h2 class="product-title">gold stainless steel ring</h2>
-          <span class="price">R450</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 5-->
-        <div class="product-box">
-          <img src="images/str8.webp" alt="" class="product-img" />
-          <h2 class="product-title">silver plated ring set</h2>
-          <span class="price">R5600</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 6-->
-        <div class="product-box">
-          <img src="images/str3.webp" alt="" class="product-img" />
-          <h2 class="product-title"> Cubic silver ring</h2>
-          <span class="price">R3000</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 7-->
-        <div class="product-box">
-          <img src="images/str4.webp" alt="" class="product-img" />
-          <h2 class="product-title">Wavy silver bracelet</h2>
-          <span class="price">R458</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 8-->
-        <div class="product-box">
-          <img src="images/str6.webp" alt="" class="product-img" />
-          <h2 class="product-title">gold stretch bracelet</h2>
-          <span class="price">R600</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 9-->
-        <div class="product-box">
-          <img src="images/neck7.jfif" alt="" class="product-img">
-          <h2 class="product-title">silver plated necklace</h2>
-          <span class="price">R4000</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 10-->
-        <div class="product-box">
-          <img src="images/str5.webp" alt="" class="product-img" />
-          <h2 class="product-title"> s-symbol gold plated earrings</h2>
-          <span class="price">R3200</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 11-->
-        <div class="product-box">
-          <img src="images/str1.jpg" alt="" class="product-img" />
-          <h2 class="product-title">Hoop hang gold earrings</h2>
-          <span class="price">R3200</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 12-->
-        <div class="product-box">
-          <img src="images/str12.webp" alt="" class="product-img" />
-          <h2 class="product-title">gold plated Bee necklace</h2>
-          <span class="price">R390</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 13-->
-        <div class="product-box">
-          <img src="images/ring1.webp" alt="" class="product-img" />
-          <h2 class="product-title">rhodium diamante ring</h2>
-          <span class="price">R500</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 14-->
-        <div class="product-box">
-          <img src="images/ring2.webp" alt="" class="product-img" />
-          <h2 class="product-title">flower plated silver ring</h2>
-          <span class="price">R1490</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 15-->
-        <div class="product-box">
-          <img src="images/ring3.webp" alt="" class="product-img" />
-          <h2 class="product-title">gold wrap style ring</h2>
-          <span class="price">R2300</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 16-->
-        <div class="product-box">
-          <img src="images/ear11.jpg" alt="" class="product-img" />
-          <h2 class="product-title">Pearl Huggies gold earrings</h2>
-          <span class="price">R1369</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 17-->
-        <div class="product-box">
-          <img src="images/neck10.webp" alt="" class="product-img">
-          <h2 class="product-title">Filled heart silver necklace</h2>
-          <span class="price">R1700</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 18-->
-        <div class="product-box">
-          <img src="images/ring6.webp" alt="" class="product-img" />
-          <h2 class="product-title">rose gold plated ring</h2>
-          <span class="price">R470</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 19-->
-        <div class="product-box">
-          <img src="images/ring7.webp" alt="" class="product-img" />
-          <h2 class="product-title">Gold engagement ring</h2>
-          <span class="price">R3700</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 20-->
-        <div class="product-box">
-          <img src="images/ring9.webp" alt="" class="product-img" />
-          <h2 class="product-title">Sterling silver swirl ring</h2>
-          <span class="price">R1200</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 21-->
-        <div class="product-box">
-          <img src="images/wrist11.webp" alt="" class="product-img" />
-          <h2 class="product-title">Rainbow colored Watch</h2>
-          <span class="price">R567</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 22-->
-        <div class="product-box">
-          <img src="images/ear12.jpg" alt="" class="product-img" />
-          <h2 class="product-title">gold cubic plate earrings</h2>
-          <span class="price">R2200</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 23-->
-        <div class="product-box">
-          <img src="images/ring12.webp" alt="" class="product-img" />
-          <h2 class="product-title">Silver plated cubic zirconia rectangle bracelet</h2>
-          <span class="price">R2359</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 24-->
-        <div class="product-box">
-          <img src="images/ring13.webp" alt="" class="product-img" />
-          <h2 class="product-title">silver plated butterfly ring</h2>
-          <span class="price">R3400</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 25-->
-        <div class="product-box">
-          <img src="images/ear10.webp" alt="" class="product-img" />
-          <h2 class="product-title"> gold Circle leafs bracelet </h2>
-          <span class="price">R1035</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 26-->
-        <div class="product-box">
-          <img src="images/wrist2.webp" alt="" class="product-img" />
-          <h2 class="product-title">Gold filigree stretch bracelet</h2>
-          <span class="price">R400</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 27-->
-        <div class="product-box">
-          <img src="images/neck12.jfif" alt="" class="product-img">
-          <h2 class="product-title"> Silver N-symbol necklace</h2>
-          <span class="price">R1679</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 28-->
-        <div class="product-box">
-          <img src="images/wrist4.webp" alt="" class="product-img" />
-          <h2 class="product-title"> gold crafted watch</h2>
-          <span class="price">R8000</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 29-->
-        <div class="product-box">
-          <img src="images/wrist5.webp" alt="" class="product-img" />
-          <h2 class="product-title">Gunmetal Round Metal Mesh watch</h2>
-          <span class="price">R4100</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 30-->
-        <div class="product-box">
-          <img src="images/neck.16.jfif" alt="" class="product-img">
-          <h2 class="product-title">Blue diamond/silver plated necklace</h2>
-          <span class="price">R3930</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 31-->
-        <div class="product-box">
-          <img src="images/wrist7.webp" alt="" class="product-img" />
-          <h2 class="product-title">Silver pearl and Diamante bracelet</h2>
-          <span class="price">R470</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 32-->
-        <div class="product-box">
-          <img src="images/wrist8.webp" alt="" class="product-img" />
-          <h2 class="product-title">Rhodium statement large wrist cuffs</h2>
-          <span class="price">R3200</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 33-->
-        <div class="product-box">
-          <img src="images/storeItem4.jpg" alt="" class="product-img" />
-          <h2 class="product-title">Gold mismatched face earrings</h2>
-          <span class="price">R200</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 34-->
-        <div class="product-box">
-          <img src="images/wrist10.webp" alt="" class="product-img" />
-          <h2 class="product-title">Rose Gold Diamante watch </h2>
-          <span class="price">R2890</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 35-->
-        <div class="product-box">
-          <img src="images/ring10.webp" alt="" class="product-img" />
-          <h2 class="product-title">Gold plated cubic ring</h2>
-          <span class="price">R3520</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 36-->
-        <div class="product-box">
-          <img src="images/wrist12.webp" alt="" class="product-img" />
-          <h2 class="product-title">Mixed Metal watch</h2>
-          <span class="price">R900</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
-        </div>
-        <!--product box 37-->
-        <div class="product-box">
-          <img src="images/neck3.avif" alt="" class="product-img">
-          <h2 class="product-title"> men plated silver necklace</h2>
-          <span class="price">R3077</span>
-          <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+    <h2 class="title">in store</h2>
+    
+    <div class="shop-content">
+      <!--product box 1-->
+      <div class="product-box">
+        <img src="images/ear3.webp" alt="" class="product-img" onclick="openFullScreen()" />
+        <h2 class="product-title">crystal clear silver earrings</h2>
+        <span class="price">1500</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 38-->
-       <div class="product-box">
-          <img src="images/ear8.webp" alt="" class="product-img" />
-          <h2 class="product-title">silver huggie earrings</h2>
-          <span class="price">2250</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 2-->
+      <div class="product-box">
+        <img src="images/str11.webp" alt="" class="product-img" />
+        <h2 class="product-title">Gyptian bracelet </h2>
+        <span class="price">R495</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 39-->
-       <div class="product-box">
-          <img src="images/neck5.jfif" alt="" class="product-img">
-          <h2 class="product-title"> Two round dip silver necklace</h2>
-          <span class="price">R1039</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 3-->
+      <div class="product-box">
+        <img src="images/str2.jpg" alt="" class="product-img" />
+        <h2 class="product-title">Blue hoops silver earrings</h2>
+        <span class="price">R345</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 40-->
-       <div class="product-box">
-          <img src="images/neck6.jfif" alt="" class="product-img">
-          <h2 class="product-title">Sparking silver plated necklace</h2>
-          <span class="price">R940</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 4-->
+      <div class="product-box">
+        <img src="images/str7.webp" alt="" class="product-img" />
+        <h2 class="product-title">gold stainless steel ring</h2>
+        <span class="price">R450</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 41-->
-       <div class="product-box">
-          <img src="images/str9.webp" alt="" class="product-img" />
-          <h2 class="product-title">Rose Gold colored chunky Triple crown watch</h2>
-          <span class="price">R7300</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 5-->
+      <div class="product-box">
+        <img src="images/str8.webp" alt="" class="product-img" />
+        <h2 class="product-title">silver plated ring set</h2>
+        <span class="price">R5600</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 42-->
-       <div class="product-box">
-          <img src="images/neck9.jfif" alt="" class="product-img">
-          <h2 class="product-title"> Two heart silver necklace</h2>
-          <span class="price">R690</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 6-->
+      <div class="product-box">
+        <img src="images/str3.webp" alt="" class="product-img" />
+        <h2 class="product-title"> Cubic silver ring</h2>
+        <span class="price">R3000</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 43-->
-       <div class="product-box">
+      <!--product box 7-->
+      <div class="product-box">
+        <img src="images/str4.webp" alt="" class="product-img" />
+        <h2 class="product-title">Wavy silver bracelet</h2>
+        <span class="price">R458</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 8-->
+      <div class="product-box">
+        <img src="images/str6.webp" alt="" class="product-img" />
+        <h2 class="product-title">gold stretch bracelet</h2>
+        <span class="price">R600</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 9-->
+      <div class="product-box">
+        <img src="images/neck7.jfif" alt="" class="product-img">
+        <h2 class="product-title">silver plated necklace</h2>
+        <span class="price">R4000</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 10-->
+      <div class="product-box">
+        <img src="images/str5.webp" alt="" class="product-img" />
+        <h2 class="product-title"> s-symbol gold plated earrings</h2>
+        <span class="price">R3200</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 11-->
+      <div class="product-box">
+        <img src="images/str1.jpg" alt="" class="product-img" />
+        <h2 class="product-title">Hoop hang gold earrings</h2>
+        <span class="price">R3200</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 12-->
+      <div class="product-box">
+        <img src="images/str12.webp" alt="" class="product-img" />
+        <h2 class="product-title">gold plated Bee necklace</h2>
+        <span class="price">R390</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 13-->
+      <div class="product-box">
+        <img src="images/ring1.webp" alt="" class="product-img" />
+        <h2 class="product-title">rhodium diamante ring</h2>
+        <span class="price">R500</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 14-->
+      <div class="product-box">
+        <img src="images/ring2.webp" alt="" class="product-img" />
+        <h2 class="product-title">flower plated silver ring</h2>
+        <span class="price">R1490</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 15-->
+      <div class="product-box">
+        <img src="images/ring3.webp" alt="" class="product-img" />
+        <h2 class="product-title">gold wrap style ring</h2>
+        <span class="price">R2300</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 16-->
+      <div class="product-box">
+        <img src="images/ear11.jpg" alt="" class="product-img" />
+        <h2 class="product-title">Pearl Huggies gold earrings</h2>
+        <span class="price">R1369</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 17-->
+      <div class="product-box">
+        <img src="images/neck10.webp" alt="" class="product-img">
+        <h2 class="product-title">Filled heart silver necklace</h2>
+        <span class="price">R1700</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 18-->
+      <div class="product-box">
+        <img src="images/ring6.webp" alt="" class="product-img" />
+        <h2 class="product-title">rose gold plated ring</h2>
+        <span class="price">R470</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 19-->
+      <div class="product-box">
+        <img src="images/ring7.webp" alt="" class="product-img" />
+        <h2 class="product-title">Gold engagement ring</h2>
+        <span class="price">R3700</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 20-->
+      <div class="product-box">
+        <img src="images/ring9.webp" alt="" class="product-img" />
+        <h2 class="product-title">Sterling silver swirl ring</h2>
+        <span class="price">R1200</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 21-->
+      <div class="product-box">
+        <img src="images/wrist11.webp" alt="" class="product-img" />
+        <h2 class="product-title">Rainbow colored Watch</h2>
+        <span class="price">R567</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 22-->
+      <div class="product-box">
+        <img src="images/ear12.jpg" alt="" class="product-img" />
+        <h2 class="product-title">gold cubic plate earrings</h2>
+        <span class="price">R2200</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 23-->
+      <div class="product-box">
+        <img src="images/ring12.webp" alt="" class="product-img" />
+        <h2 class="product-title">Silver plated cubic zirconia rectangle bracelet</h2>
+        <span class="price">R2359</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 24-->
+      <div class="product-box">
+        <img src="images/ring13.webp" alt="" class="product-img" />
+        <h2 class="product-title">silver plated butterfly ring</h2>
+        <span class="price">R3400</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 25-->
+      <div class="product-box">
+        <img src="images/ear10.webp" alt="" class="product-img" />
+        <h2 class="product-title"> gold Circle leafs bracelet </h2>
+        <span class="price">R1035</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 26-->
+      <div class="product-box">
+        <img src="images/wrist2.webp" alt="" class="product-img" />
+        <h2 class="product-title">Gold filigree stretch bracelet</h2>
+        <span class="price">R400</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 27-->
+      <div class="product-box">
+        <img src="images/neck12.jfif" alt="" class="product-img">
+        <h2 class="product-title"> Silver N-symbol necklace</h2>
+        <span class="price">R1679</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 28-->
+      <div class="product-box">
+        <img src="images/wrist4.webp" alt="" class="product-img" />
+        <h2 class="product-title"> gold crafted watch</h2>
+        <span class="price">R8000</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 29-->
+      <div class="product-box">
+        <img src="images/wrist5.webp" alt="" class="product-img" />
+        <h2 class="product-title">Gunmetal Round Metal Mesh watch</h2>
+        <span class="price">R4100</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 30-->
+      <div class="product-box">
+        <img src="images/neck.16.jfif" alt="" class="product-img">
+        <h2 class="product-title">Blue diamond/silver plated necklace</h2>
+        <span class="price">R3930</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 31-->
+      <div class="product-box">
+        <img src="images/wrist7.webp" alt="" class="product-img" />
+        <h2 class="product-title">Silver pearl and Diamante bracelet</h2>
+        <span class="price">R470</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 32-->
+      <div class="product-box">
+        <img src="images/wrist8.webp" alt="" class="product-img" />
+        <h2 class="product-title">Rhodium statement large wrist cuffs</h2>
+        <span class="price">R3200</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 33-->
+      <div class="product-box">
+        <img src="images/storeItem4.jpg" alt="" class="product-img" />
+        <h2 class="product-title">Gold mismatched face earrings</h2>
+        <span class="price">R200</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 34-->
+      <div class="product-box">
+        <img src="images/wrist10.webp" alt="" class="product-img" />
+        <h2 class="product-title">Rose Gold Diamante watch </h2>
+        <span class="price">R2890</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 35-->
+      <div class="product-box">
+        <img src="images/ring10.webp" alt="" class="product-img" />
+        <h2 class="product-title">Gold plated cubic ring</h2>
+        <span class="price">R3520</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 36-->
+      <div class="product-box">
+        <img src="images/wrist12.webp" alt="" class="product-img" />
+        <h2 class="product-title">Mixed Metal watch</h2>
+        <span class="price">R900</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 37-->
+      <div class="product-box">
+        <img src="images/neck3.avif" alt="" class="product-img">
+        <h2 class="product-title"> men plated silver necklace</h2>
+        <span class="price">R3077</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 38-->
+      <div class="product-box">
+        <img src="images/ear8.webp" alt="" class="product-img" />
+        <h2 class="product-title">silver huggie earrings</h2>
+        <span class="price">2250</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 39-->
+      <div class="product-box">
+        <img src="images/neck5.jfif" alt="" class="product-img">
+        <h2 class="product-title"> Two round dip silver necklace</h2>
+        <span class="price">R1039</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 40-->
+      <div class="product-box">
+        <img src="images/neck6.jfif" alt="" class="product-img">
+        <h2 class="product-title">Sparking silver plated necklace</h2>
+        <span class="price">R940</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 41-->
+      <div class="product-box">
+        <img src="images/str9.webp" alt="" class="product-img" />
+        <h2 class="product-title">Rose Gold colored chunky Triple crown watch</h2>
+        <span class="price">R7300</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 42-->
+      <div class="product-box">
+        <img src="images/neck9.jfif" alt="" class="product-img">
+        <h2 class="product-title"> Two heart silver necklace</h2>
+        <span class="price">R690</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
+      </div>
+      <!--product box 43-->
+      <div class="product-box">
         <img src="images/ring5.webp" alt="" class="product-img" />
-          <h2 class="product-title">double gold plated ring</h2>
-          <span class="price">R2190</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+        <h2 class="product-title">double gold plated ring</h2>
+        <span class="price">R2190</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 44-->
-       <div class="product-box">
-          <img src="images/neck11.jfif" alt="" class="product-img">
-          <h2 class="product-title">Symbols plated silver necklace</h2>
-          <span class="price">R644</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 44-->
+      <div class="product-box">
+        <img src="images/neck11.jfif" alt="" class="product-img">
+        <h2 class="product-title">Symbols plated silver necklace</h2>
+        <span class="price">R644</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 45-->
-       <div class="product-box">
+      <!--product box 45-->
+      <div class="product-box">
         <img src="images/wrist3.webp" alt="" class="product-img" />
-          <h2 class="product-title">black wrist band</h2>
-          <span class="price">R320</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+        <h2 class="product-title">black wrist band</h2>
+        <span class="price">R320</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 46-->
-       <div class="product-box">
-          <img src="images/neck14.jfif" alt="" class="product-img">
-          <h2 class="product-title"> Percent diamond plated silver necklace</h2>
-          <span class="price">R546</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 46-->
+      <div class="product-box">
+        <img src="images/neck14.jfif" alt="" class="product-img">
+        <h2 class="product-title"> Percent diamond plated silver necklace</h2>
+        <span class="price">R546</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 47-->
-       <div class="product-box">
-          <img src="images/wrist6.webp" alt="" class="product-img" />
-          <h2 class="product-title">Rose Gold infinity Diamante necklace</h2>
-          <span class="price">R330</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 47-->
+      <div class="product-box">
+        <img src="images/wrist6.webp" alt="" class="product-img" />
+        <h2 class="product-title">Rose Gold infinity Diamante necklace</h2>
+        <span class="price">R330</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-       <!--product box 48-->
-       <div class="product-box">
-          <img src="images/neck.17.jfif" alt="" class="product-img">
-          <h2 class="product-title">heart cupid silver necklace</h2>
-          <span class="price">R480</span>
-          <i class="fa-solid fa-bag-shopping add-cart"  id="add-cart"></i>
+      <!--product box 48-->
+      <div class="product-box">
+        <img src="images/neck.17.jfif" alt="" class="product-img">
+        <h2 class="product-title">heart cupid silver necklace</h2>
+        <span class="price">R480</span>
+        <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
       <!--product box 49-->
       <div class="product-box">
@@ -519,12 +545,11 @@
         <span class="price">R6780</span>
         <i class="fa-solid fa-bag-shopping add-cart" id="add-cart"></i>
       </div>
-      </div>
-    </section>
-    <script
-      src="https://kit.fontawesome.com/b0e5731180.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="StoreItem.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/b0e5731180.js" crossorigin="anonymous"></script>
+  <script src="StoreItem.js"></script>
+</body>
+
 </html>

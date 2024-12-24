@@ -9,10 +9,13 @@ function closeMenu() {
 }
 end here */
 
+
+
 const cart = document.querySelector(".cart");
 const cartOpen = document.querySelector(".fa-cart-shopping");
 const cartClose = document.querySelector(".close");
 
+// cart script
 cartOpen.onclick = () => {
   cart.style.right = "0";
 };
@@ -28,6 +31,7 @@ const paymentContainer = document.querySelector(".payment-structure");
 closePayment.onclick = () => {
   paymentContainer.classList.remove("acive");
 };
+
 
 ///cart message
 const cartMessage = document.querySelector(".card-messageContainer");
@@ -51,6 +55,7 @@ ScrollReveal().reveal(".shop-content", {
   delay: 400,
   origin: "top",
 });
+
 /*cart section*/
 
 
@@ -213,7 +218,9 @@ function updatetotal() {
   var totalPay = (document.querySelector(".totalCart").innerHTML = "R" + total);
 }
 
+// search bar
 const search = () => {
+
   const searchBox = document.getElementById("search").value.toUpperCase();
   const products = document.querySelectorAll(".product-box");
   const itemName = document.getElementsByTagName("h2");
@@ -234,6 +241,7 @@ const search = () => {
       match.innerText.style.display = "none";
     }
   }
+  
 };
 
 ///payment banks

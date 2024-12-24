@@ -14,7 +14,12 @@ const imgBike = document.querySelector("#imgBike");
 const textColor = document.querySelector(".textColor");
 
 
+// features script
+
 gamepad.addEventListener("click", () => {
+
+  //Performance
+
   Control1.style.display = "block";
   Control2.style.display = "block";
 
@@ -29,6 +34,9 @@ gamepad.addEventListener("click", () => {
 });
 
 stopwatch.addEventListener("click", () => {
+
+  //Control
+
   efficiency1.style.display = "block";
   efficiency2.style.display = "block";
 
@@ -43,6 +51,9 @@ stopwatch.addEventListener("click", () => {
 });
 
 sprayCan.addEventListener("click", () => {
+
+  //Efficiency
+
   exterior1.style.display = "block";
   exterior2.style.display = "block";
 
@@ -58,6 +69,8 @@ sprayCan.addEventListener("click", () => {
 });
 
 
+
+// bike color selection script
 
 color1.addEventListener('click',() => {
   imgBike.src = "images/XR150L_Colours_Red.png";

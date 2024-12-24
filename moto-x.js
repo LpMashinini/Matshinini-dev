@@ -1,3 +1,6 @@
+
+// feature section script
+
 const gamepad = document.querySelector(".fa-gauge");
 const stopwatch = document.querySelector(".fa-gamepad");
 const sprayCan = document.querySelector(".fa-bicycle");
@@ -8,13 +11,12 @@ const Control2 = document.querySelector(".Control1");
 const efficiency2 = document.querySelector(".Efficiency1");
 const exterior2 = document.querySelector(".Exterior1");
 const imgContainer = document.querySelector(".imgContainer");
-const color1 = document.querySelector("#white");
-const color2 = document.querySelector("#black");
 const imgBike = document.querySelector("#imgBike");
-const textColor = document.querySelector(".textColor");
 
 
 gamepad.addEventListener("click", () => {
+  // Control
+  // changes to control information
   Control1.style.display = "block";
   Control2.style.display = "block";
 
@@ -29,6 +31,9 @@ gamepad.addEventListener("click", () => {
 });
 
 stopwatch.addEventListener("click", () => {
+  // Performance
+  // changes to performance information
+
   efficiency1.style.display = "block";
   efficiency2.style.display = "block";
 
@@ -43,6 +48,9 @@ stopwatch.addEventListener("click", () => {
 });
 
 sprayCan.addEventListener("click", () => {
+  // Design
+  // changes to design information
+
   exterior1.style.display = "block";
   exterior2.style.display = "block";
 
@@ -57,14 +65,3 @@ sprayCan.addEventListener("click", () => {
   imgContainer.style.backgroundPosition = "center"
 });
 
-
-
-color1.addEventListener('click',() => {
-  imgBike.src = "images/XR150L_Colours_Red.png";
-  textColor.innerHTML = "Red Non-Metallic";
-})
-
-color2.addEventListener('click',() => {
-  imgBike.src = "images/XR150L_Colours_white.png";
-  textColor.innerHTML = "White Non-Metallic";
-})

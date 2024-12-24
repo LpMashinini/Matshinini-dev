@@ -1,4 +1,11 @@
 const sideMenu = document.getElementById("sidemenu");
+const user = document.querySelector(".fa-user");
+const loginForm = document.querySelector(".login-container");
+const serverBtn = document.getElementById("serverBtn");
+const serverClose = document.querySelector(".server-close");
+const serverContainer = document.querySelector(".server-container");
+const loginClose = document.querySelector(".login-close");
+
 
 /*menu script*/
 
@@ -8,18 +15,14 @@ function openMenu() {
 function closeMenu() {
   sideMenu.style.right = "-200px";
 }
+
 ///end here
 
 ///login form
 
-const user = document.querySelector(".fa-user");
-const loginForm = document.querySelector(".login-container");
-const serverBtn = document.getElementById("serverBtn");
-const serverClose = document.querySelector(".server-close");
-const serverContainer = document.querySelector(".server-container");
-const loginClose = document.querySelector(".login-close");
 
 serverBtn.onclick = () => {
+
   const nameInput = document.getElementById("inputText");
   const passInput = document.getElementById("pass");
   const emailInput = document.getElementById("emailInput");
@@ -30,6 +33,7 @@ serverBtn.onclick = () => {
 
   serverContainer.classList.add('open')
   loginForm.classList.remove("active");
+
 };
 
 serverClose.onclick = () => {
@@ -39,6 +43,7 @@ serverClose.onclick = () => {
 user.addEventListener("click", () => {
   loginForm.classList.add("active");
 });
+
 loginClose.addEventListener("click", () => {
   loginForm.classList.remove("active");
 });
@@ -46,6 +51,7 @@ loginClose.addEventListener("click", () => {
 
 
 /*scroll animation*/
+
 ScrollReveal({
   reset: true,
   duration: 2500,
@@ -54,6 +60,7 @@ ScrollReveal({
 });
 
 /*header scroll */
+
 ScrollReveal().reveal(".backimg", {
   delay: 400,
   origin: "top",
@@ -112,6 +119,7 @@ ScrollReveal().reveal(".clubImg", {
 /*scroll animation end here */
 
 /*latest & greatest*/
+
 const nextBtn = document.querySelector(".fa-arrow-right");
 const backBtn = document.querySelector(".fa-arrow-left");
 const galleryScroll = document.querySelector(".img-item");

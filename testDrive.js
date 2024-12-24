@@ -4,20 +4,25 @@ const product_title = document.querySelectorAll(".product-title");
 const selection = document.querySelector(".selection");
 
 
+// bike Selection script
 
 for (let i = 0; i < checkBox.length; i++) {
 
+  // loop through bikes
+
   checkBox[i].addEventListener("change", () => {
+     //check if the bike is checked
     const checkedCount = Array.from(checkBox).filter(
       (box) => box.checked
     ).length;
 
 
     if (checkedCount == 3) {
-      console.log("alert box");
+      //if 3 bikes are selected
+      //comfirm selection button change to red
+      //if not changes to main color 
       selection.style.backgroundColor = "red";   
     } else {
-      console.log("not less than 3");
       selection.style.backgroundColor = "rgb(195, 195, 195)";
     }
 

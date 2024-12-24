@@ -1,3 +1,4 @@
+// testimonial scripts starts here
 let userTexts = document.querySelectorAll(".user-text");
 let userPics = document.querySelectorAll(".user-pic");
 
@@ -16,6 +17,9 @@ function openReview(){
     userPics[i].classList.add("active-pic");
     userTexts[i].classList.add("active-text");
 }
+
+// testimonial scripts ends here
+
 
 
 // sliding content
