@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* color container */
+
+  --textColor: black;
+  --textColor2: white;
+  --bgColor: rgb(255, 255, 255);
+  --navBgColor:  rgba(58, 58, 58, 0.351);
+  --borderColor:  rgb(182, 180, 180);
+  --boxSH: 0 4px 30px rgba(203, 200, 200, 0.1);
+  --textButton:  rgb(9, 27, 61);
+  --iconBg:  rgb(9, 47, 109);
+  --footerBtn:  rgb(255, 54, 54);
+  --colorDiv: rgb(198, 1, 1);
+  --colorDiv4:  rgb(234, 230, 230);
+  --colorDiv3:  rgb(204, 204, 204);
+  --footerSecBg: rgb(31, 32, 35);
+  --color1: red;
+  --span:  rgb(194, 187, 187);
+  --spanBdr: 2px solid rgb(194, 187, 187);
+  --color2: blue;
+  --shopIcon: rgb(48, 48, 48);
+  --footerBg: rgb(31, 32, 35);
+  --imgConBg:  rgb(119, 118, 118);
+  --inputColor: rgb(194, 187, 187);
+  --inputBtn: rgb(229, 12, 12);
+  --inputBdr: 2px solid gray ;
+  --font1--: Georgia, "Times New Roman", Times, serif;
+  --font2--: "Host Grotesk", sans-serif;
+  --backGround: linear-gradient(rgba(24, 24, 24, 0.356), rgba(1, 1, 1, 0.462)),
+  url("images/honda_fleet_resize.jpg");
+  --imgContainer: linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/perform-atv.jpg);
+
+ }
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* header style starts here */
+
+.nav-container {
+  background: var(--navBgColor);
+  box-shadow: var(--boxSH);
+  backdrop-filter: blur(96px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  color: var(--textColor2);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.logo-container a {
+  text-decoration: none;
+}
+
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-container ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+
+.nav-container ul li a {
+  color: var(--textColor2);
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 19px;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.nav-container ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: var(--textColor2);
+  border-radius: 5px;
+  bottom: -12px;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.nav-container ul li a:hover::before {
+  width: 50%;
+}
+
+.header-img {
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background:var(--backGround);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+}
+
+.header-img h3 {
+  color: var(--bgColor);
+  z-index: 1;
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.header-img span {
+  width: 70px;
+  height: 5px;
+  background-color: var(--color1);
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+
+.body-content {
+  padding: 50px 90px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content h4 {
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-family: var(--font2--);
+  font-weight: 900;
+}
+
+/* body content style starts here */
+.body-content .header {
+  color: var(--textColor);
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-family: var(--font2--);
+}
+
+.content .italic {
+  font-style: italic;
+}
+
+.content  h4 span {
+  display: flex;
+  flex-direction: column;
+}
+
+.content a {
+  color: var(--textColor);
+  text-decoration: underline var(--color1);
+}
+
+
+.personal-details {
+  padding: 10px 90px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font2--);
+}
+
+.personal-details h2 {
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+.input-Container {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 10px;
+}
+
+.select {
+  width: 350px;
+  padding: 20px;
+}
+
+.select #selectCon {
+  width: 100%;
+}
+
+
+.inputbox {
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.inputbox h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.inputbox span {
+  color: var(--span);
+}
+.inputbox input {
+  width: 100%;
+  border: var(--spanBdr);
+  outline: none;
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.inputbox input::placeholder {
+  color: var(--inputColor);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.inputbox textarea{
+  text-transform: capitalize;
+}
+
+.inputbox textarea::placeholder {
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+#select {
+  display: flex;
+  flex-direction: column;
+}
+#select .title {
+  padding: 20px;
+  margin-top: 8px;
+}
+
+#sec-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.model {
+  padding: 20px 0px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.input-btn {
+  width: 350px;
+  height: 60px;
+  margin: 123px 0px 100px -400px;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid var(--color1);
+}
+
+.input-btn button {
+  color: var(--color1);
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.input-btn .fa-solid {
+  color: var(--color1);
+  font-size: 15px;
+}
+
+.form-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.checkInput {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.checkInput input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: var(--inputBdr) ;
+  background-color: transparent;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--color1);
+  border: 2px solid var(--color1) ;
+}
+
+
+.checkInput p {
+  margin-left: 5px;
+}
+.checkInput p span {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+
+.inputbox-btn {
+  width: 120px;
+  margin: 30px 0px 0px -10px;
+}
+.inputbox-btn button {
+  width: 100%;
+  color: var(--bgColor);
+  cursor: pointer;
+  background-color: var(--inputBtn);
+  border: 0;
+  outline: none;
+  padding: 15px 30px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+
+
+/* footer section style starts here */
+.footer-section {
+  padding: 60px 50px;
+  background-color: var(--footerSecBg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-content {
+  color: var(--textColor2);
+  text-align: center;
+}
+
+.footer-content h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  cursor: pointer;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.footer-content p::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--textColor2);
+  border-radius: 5px;
+  bottom: -12px;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.footer-content p:hover::before{
+  width: 30%;
+}
+
+.footer-content i {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: var(--textColor2);
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-content button {
+  color: var(--textColor2);
+  cursor: pointer;
+  background-color: var(--footerBtn);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: var(--font1--)
+}
+
+.footer-section .copy {
+  color: var(--textColor2);
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+
+/*awaiting media-query for responsiveness*/
