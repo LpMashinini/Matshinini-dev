@@ -28,7 +28,7 @@ gamepad.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/performance-street.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/performance-street.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -44,7 +44,7 @@ stopwatch.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/bodywork-street.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/bodywork-street.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -61,7 +61,7 @@ sprayCan.addEventListener("click", () => {
   Control2.style.display = "none";
 
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/street-wheel.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/street-wheel.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -72,20 +72,20 @@ sprayCan.addEventListener("click", () => {
 
 color1.addEventListener('click',() => {
   // color 1
-  imgBike.src = "images/streetBike.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/streetBike.png";
   textColor.innerHTML = "white Pearlescent";
 })
 
 color2.addEventListener('click',() => {
   // color 2
 
-  imgBike.src = "images/street-bike2.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/street-bike2.png";
   textColor.innerHTML = "Black nMetallic";
 })
 
 color3.addEventListener('click',() => {
   // color 3
 
-  imgBike.src = "images/streetBike2.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/streetBike2.png";
   textColor.innerHTML = "Red Metallic";
 })

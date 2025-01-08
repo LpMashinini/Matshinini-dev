@@ -35,8 +35,8 @@
   --font1--: Georgia, "Times New Roman", Times, serif;
   --font2--: "Host Grotesk", sans-serif;
   --backGround: linear-gradient(rgba(24, 24, 24, 0.356), rgba(1, 1, 1, 0.462)),
-  url("images/honda_fleet_resize.jpg");
-  --imgContainer: linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/perform-atv.jpg);
+  url("/Matshinini-Front-end-developer/images/honda_fleet_resize.jpg");
+  --imgContainer: linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url("/Matshinini-Front-end-developer/images/perform-atv.jpg");
 
  }
 

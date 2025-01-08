@@ -25,7 +25,7 @@ gamepad.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/elite-1.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/elite-1.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -40,7 +40,7 @@ sprayCan.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/bodywork.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/bodywork.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -56,7 +56,7 @@ stopwatch.addEventListener("click", () => {
   Control2.style.display = "none";
 
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/elite-safety.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/elite-safety.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -66,13 +66,13 @@ stopwatch.addEventListener("click", () => {
 // bike color selection script
 color1.addEventListener('click',() => {
   // color 1
-  imgBike.src = "images/scooter2.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/scooter2.png";
   textColor.innerHTML = "White Non-Metallic";
 
 })
 
 color2.addEventListener('click',() => {
   // color 2
-  imgBike.src = "images/Elite125_Colours_Red.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/Elite125_Colours_Red.png";
   textColor.innerHTML = "Red Non-Metallic";
 })

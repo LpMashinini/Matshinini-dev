@@ -28,7 +28,7 @@ gamepad.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/Honda-Xr150L.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/Honda-Xr150L.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -45,7 +45,7 @@ stopwatch.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/suspension.webp)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/suspension.webp)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -63,7 +63,7 @@ sprayCan.addEventListener("click", () => {
   Control2.style.display = "none";
 
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/efficiency2.webp)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/efficiency2.webp)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -73,11 +73,11 @@ sprayCan.addEventListener("click", () => {
 // bike color selection script
 
 color1.addEventListener('click',() => {
-  imgBike.src = "images/XR150L_Colours_Red.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/XR150L_Colours_Red.png";
   textColor.innerHTML = "Red Non-Metallic";
 })
 
 color2.addEventListener('click',() => {
-  imgBike.src = "images/XR150L_Colours_white.png";
+  imgBike.src = "/Matshinini-Front-end-developer/images/XR150L_Colours_white.png";
   textColor.innerHTML = "White Non-Metallic";
 })

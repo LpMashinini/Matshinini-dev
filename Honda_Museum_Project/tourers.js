@@ -26,7 +26,7 @@ gamepad.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/feature-copy.avif)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/feature-copy.avif)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -42,7 +42,7 @@ stopwatch.addEventListener("click", () => {
   exterior1.style.display = "none";
   exterior2.style.display = "none";
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/efficiency.avif)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/efficiency.avif)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });
@@ -58,7 +58,7 @@ sprayCan.addEventListener("click", () => {
   Control2.style.display = "none";
 
 
-  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/tourer-exterior-2.jpg)';
+  imgContainer.style.background = 'linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(/Matshinini-Front-end-developer/images/tourer-exterior-2.jpg)';
   imgContainer.style.backgroundSize = "cover"; 
   imgContainer.style.backgroundPosition = "center"
 });

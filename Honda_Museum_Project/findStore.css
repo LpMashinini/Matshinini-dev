@@ -9,7 +9,7 @@
   --textColor: white;
   --textColor2: red;
   --backGround: linear-gradient(rgba(10, 10, 10, 0.638), rgba(0, 0, 0, 0.54)),
-  url("images/honda-test.jpg");
+  url("/Matshinini-Front-end-developer/images/honda-test.jpg");
   --boxSh:  0 4px 30px rgba(106, 106, 106, 0.955);
   --btnBdr:  2px solid var(--textColor2);
   --btnBg:  rgb(210, 207, 207);

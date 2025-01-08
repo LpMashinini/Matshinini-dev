@@ -3,22 +3,22 @@ const leftSlide = document.getElementById("left-slide");
 const rightSlide = document.getElementById("right-slide");
 const model = document.querySelector(".model-bikes");
 const change1 = () => {
-  bikeImg.src = "images/storebike1.avif";
+  bikeImg.src = "/Matshinini-Front-end-developer/images/storebike1.avif";
 }
 const change2 = () => {
-  bikeImg.src = "images/storebike2.avif";
+  bikeImg.src = "/Matshinini-Front-end-developer/images/storebike2.avif";
 }
 const change3 = () => {
-  bikeImg.src = "images/storebike3.avif";
+  bikeImg.src = "/Matshinini-Front-end-developer/images/storebike3.avif";
 }
 
 leftSlide.addEventListener("click", () => {
-  model.scrollLeft += 200;
+  model.scrollLeft -= 200;
   model.style.scrollBehavior = "smooth";
 });
 
 rightSlide.addEventListener("click", () => {
-  model.scrollLeft -= 200;
+  model.scrollLeft += 200;
   model.style.scrollBehavior = "smooth";
 });
 

@@ -36,8 +36,8 @@
   --font1--: Georgia, "Times New Roman", Times, serif;
   --font2--: "Host Grotesk", sans-serif;
   --backGround: linear-gradient(to right,rgba(20, 20, 20, 0.897), rgba(255, 255, 255, 0)),
-  url("images/moto.jpg");
-  --imgContainer:  linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/moto1.avif);
+  url("/Matshinini-Front-end-developer/images/moto.jpg");
+  --imgContainer:  linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url("/Matshinini-Front-end-developer/images/moto1.avif");
 
  }
 

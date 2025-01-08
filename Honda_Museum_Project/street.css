@@ -36,8 +36,8 @@
   --font1--: Georgia, "Times New Roman", Times, serif;
   --font2--: "Montserrat", sans-serif;
   --backGround: linear-gradient(to right,rgba(20, 20, 20, 0.897), rgba(255, 255, 255, 0)),
-  url("images/scooter.jpg");
-  --imgContainer:  linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url(images/performance-street.jpg);
+  url("/Matshinini-Front-end-developer/images/street.jpg");
+  --imgContainer:  linear-gradient(rgba(0, 0, 0, 0.59), rgba(27, 25, 25, 0.208)),url("/Matshinini-Front-end-developer/images/performance-street.jpg");
 
  }
 
@@ -106,7 +106,7 @@
 .header-img {
     width: 100%;
     height: 700px;
-    background: var(--imgContainer);
+    background: var(--backGround);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

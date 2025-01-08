@@ -12,7 +12,7 @@
   --spanColor: rgb(194, 187, 187);
   --borderColor: gray;
   --footerColor: rgba(14, 33, 48, 0.805);
-  --backGround: linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 24, 29, 0.47)), url("images/appointment.jpg");
+  --backGround: linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 24, 29, 0.47)), url("/Matshinini-Front-end-developer/images/appointment.jpg");
 }
 .container {
   width: 100%;
