@@ -106,70 +106,11 @@ function lightMode() {
 
 }
 
-/*
-icon.onclick = () => {
-  icon.classList.toggle("fa-sun");
-
-  for (iconContainer of iconContainers) {
-    for (Icon of Icons) {
-      for (circle of circles) {
-        for (label of labels) {
-          for (circle of circles) {
-            for (iconSvg of iconSvgs) {
-              for (sectionHeader of sectionHeaders) {
-                for (btn of btns) {
-                  for (inputIcon of inputIcons) {
-                    for (project of projects) {
-                      for (projectLink of projectLinks) {
-                        for (projectLinkIcon of projectLinkIcons) {
-                          if (icon.classList.contains("fa-sun")) {
-                            iconContainer.style.background = "rgb(37, 43, 105)";
-                            Icon.classList.add("active");
-                            icon.classList.add("activeIcon");
-                            circle.classList.add("active-cricle");
-                            iconToggle.classList.add("active");
-                            label.classList.add("active-label");
-                            iconSvg.classList.add("activesvg");
-                            sectionHeader.classList.add("active");
-                            btn.classList.add("active-btn");
-                            inputIcon.classList.add("active-inputIcon");
-                            project.classList.add("active-project");
-                            projectLink.classList.add("active-Link");
-                            projectLinkIcon.classList.add("activeLinkIcon");
-                          } else {
-                            iconContainer.style.background = "hsl(0, 0%, 91%)";
-                            Icon.classList.remove("active");
-                            circle.classList.remove("active-cricle");
-                            iconToggle.classList.remove("active");
-                            icon.classList.remove("activeIcon");
-                            iconToggle.classList.remove("active");
-                            label.classList.remove("active-label");
-                            iconSvg.classList.remove("activesvg");
-                            sectionHeader.classList.remove("active");
-                            btn.classList.remove("active-btn");
-                            inputIcon.classList.remove("active-inputIcon");
-                            project.classList.remove("active-project");
-                            projectLink.classList.remove("active-Link");
-                            projectLinkIcon.classList.remove("activeLinkIcon");
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-};
-*/
 // Project section script
 
 project_btn.addEventListener("click", () => {
   add_projects.classList.toggle("active-project");
+  alert("Resize screen");
 });
 
 // Scroll script
