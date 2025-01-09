@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.stopwatch {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: -1px 2px 2px 2px black;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.displayTime {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin: 0px 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -1px 2px 2px 2px black;
+  font-size: 20px;
+  text-transform: capitalize;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color ease 0.5s;
+}
+.startBtn {
+  background-color: darkgreen;
+}
+.stopBtn {
+  background-color: darkred;
+}
+.resetBtn {
+  background-color: darkblue;
+}
