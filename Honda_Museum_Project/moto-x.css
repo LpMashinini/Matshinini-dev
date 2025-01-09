@@ -450,4 +450,33 @@
   margin-bottom: 10px;
 }
 
-/* awaiting media query for responsivness */
+/* awaiting media query for responsiveness */
+
+
+@media (min-width: 300px) {
+
+}
+@media (min-width: 412px) {
+
+}
+
+@media (min-width: 540px) {
+
+  
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 800px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
