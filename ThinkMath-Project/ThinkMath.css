@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+    --bgCon: linear-gradient(#34154d, rgb(21, 50, 117));
+    --mainColor: white;
+    --secBg: rgba(45, 82, 183, 0.136);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--bgCon);
+  flex-direction: column;
+}
+
+.container h1 {
+  color: var(--mainColor);
+  text-align: center;
+  margin: 30px;
+}
+
+.container .board {
+  width: 650px;
+  height: 600px;
+  padding: 0px 40px;
+  background: var(--secBg);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .board h1 {
+  color: var(--mainColor);
+  text-align: center;
+  font-size: 20px;
+  margin-top: 4rem;
+}
+
+.container .answerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.container .answerBtn button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 0px 5rem;
+  padding: 10px 40px;
+  text-transform: capitalize;
+}
+.container .board p {
+  color: var(--mainColor);
+  text-align: right;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-right: 3rem;
+  margin-top: 10px;
+}
+.btnCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0px;
+}
+
+.btnCon button {
+  background: transparent;
+  margin: 0px 70px;
+  margin-bottom: 5rem;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 2px solid var(--mainColor);
+  text-transform: capitalize;
+  color: var(--mainColor);
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
