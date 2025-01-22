@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Lebogang Peter Mashinini</h1>
+<h1 align="center">Hi 👋 there, I'm Lebogang Peter Mashinini</h1>
 
 I am an ICT student, halfway through my degree, with a focus on expanding my skills in both front-end and back-end development. I am committed to continuous learning and thrive in collaborative team environments
 
